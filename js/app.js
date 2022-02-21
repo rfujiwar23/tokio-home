@@ -54,3 +54,38 @@ var vm = new Vue({
     ]
   }
 });
+
+
+var vm = new Vue({
+    el: "#section04",
+    data: {
+        // steps
+        steps: [
+        {
+            id:1,
+            img: '',
+            body: 'シャンプー後に水分をしっかり切る',
+            alt: "シャンプー後に",
+        },
+        {
+            id:2,
+            img: '',
+            body: '手のひらに3センチ程スライム状のHOMEを出してから',
+            alt: "TOKIO HOMEを手に",
+        },
+        {
+            id:3,
+            img: '',
+            body: 'クリームになるまで手のひらでしっかり伸ばします',
+            alt: "TOKIO HOMEをクリーム状に",
+        },
+        {
+            id:4,
+            img: '',
+            body: '中間から毛先中心に馴染ませて5分ほど放置して流します',
+            alt: "TOKIO HOMEを放置",
+        },
+      ]
+    }
+  });
+
