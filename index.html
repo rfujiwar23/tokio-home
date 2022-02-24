@@ -104,18 +104,20 @@
         </div>
         <div class="sect01-02">
           カリスマ美容師・カミカリスマサロン支持率No.1
-          <h4>TOKIOインからみトリートメント</h4>
+          <h4>TOKIOインカラミトリートメント</h4>
         </div>
         <div class="sect01-03">
-          <div class="product-list" id="section01">
+          <div class="product-list container" id="section01">
             <p>{{message}}</p>
             <div class="row">
       
-              <div v-for="point in threePoints" class="col-sm-4">
-                <h4>{{point.subtitle}}</h4>
-                <h5>{{point.subtitle2}}</h5>
-                <p>{{point.text}}</p>
-                
+              <div v-for="point in threePoints" class="points col-sm-4">
+                <div class="contents">
+                  <h4>{{point.subtitle}}</h4>
+                  <h5>{{point.subtitle2}}</h5>
+                  <hr>
+                  <p>{{point.text}}</p>
+                </div>
               </div>
       
             </div>
@@ -126,10 +128,15 @@
       <section class="sect02">
         <div class="sect02-01" id="section02">
           <h2>{{text1}}</h2>
-          <div class="row">
-            <div class="col-sm-6" v-for="voice in voices">
-              <h4>{{voice.heading}}</h4>
-              <p>{{voice.body}}</p>
+          <div class="voices">
+            <div class="row">
+              <div class="v-col col-sm-6" v-for="voice in voices">
+                <div class="content">
+                  <h4>{{voice.heading}}</h4>
+                <hr>
+                <p>{{voice.body}}</p>
+                </div>
+              </div>
             </div>
           </div>
           <h3 v-html="text2"></h3>
@@ -183,14 +190,24 @@
         <div id="section05-04"></div>
       </section>
 
-      <section class="sect06">
+      <section class="sect06" id="section06">
         <h3>更に「イエでインカラミできる毎日」のケアは</h3>
-        <div id="section06-01"></div>
-        <div id="section06-02"></div>
+        <div class="container">
+          <div id="section06-01"></div>
+        <div class="row">
+          <div class="col-6 col-sm-6" v-for="image in images">
+            <img :src="image.imgURL" :alt="image.alt">
+          </div>
+        </div>
+        <div class="to-link">
+          <a href="https://ifing-beauty.com/" id="section06-02"></a>
+        </div>
+        
         <div class="video-area mt-4 py-2 px-4">
           <div class="embed-responsive embed-responsive-16by9">
             <video controls controlsList="nodownload" autoplay muted src="images/video/ocean-tokyo-takagi.mp4"></video>
           </div>
+        </div>
         </div>
       </section>
     </div>

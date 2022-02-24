@@ -2,8 +2,97 @@ $tokio-main: rgb(255,238,206);
 
 .main {
     background:$tokio-main;
+    overflow-x: hidden;
     .sect01 {
         padding:5vh 0;
         text-align: center;
+        .sect01-03 {
+            margin:4vh auto;
+            .points {
+                // padding:10px;
+                margin:2vh auto;
+                .contents {
+                    background:aquamarine;
+                    padding:10px;
+                    h4 {
+                        font-size:1em;
+                    }
+                    h5 {
+                        font-size:1.25em;
+                        margin-top:5px;
+                        &:before {
+                            content: '~';
+                            padding-right:5px;
+                        }
+                        &:after {
+                            content: '~';
+                            padding-left:5px;
+                        }
+                    }
+                    p {
+                        color:#000;
+                        padding:20px;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+
+    .sect02 {
+        margin:3vh auto;
+        .sect02-01 {
+            margin:4vh auto;
+            .voices {
+                
+                width:100%;
+                max-width:800px;
+                margin:4vh auto;
+                .v-col {
+                    .content {
+                        margin:10px;
+                        text-align: center;
+                        background:#fff;
+                        h4 {
+                            margin-top:10px;
+                        }
+                        p {
+                            color:#000;
+                            font-size:1.15em;
+                        }
+                    }
+                }
+            }
+            h3 {
+                text-align: center;
+                line-height: 1.5em;
+            }
+            h4 {
+                text-align: center;
+            }
+        }
+    }
+
+    .sect06 {
+        .to-link {
+            margin-top:5vh;
+            text-align: center;
+            padding:5px 10px;
+            // background:red;
+            a {
+                background: rgb(138,124,113);
+                border-radius: 5px;
+                background: linear-gradient(60deg, rgba(138,124,113,1) 0%, rgba(180,159,140,1) 100%);
+                color:#fff;
+                padding:10px 20px;
+                font-size: 1.5em;
+                &:hover {
+                    text-decoration: underline;
+                    text-shadow: 1px 1px 2px rgba(0,0,0,0.66);
+                    background: rgb(228,226,224);
+                    background: linear-gradient(60deg, rgba(228,226,224,1) 0%, rgba(218,193,169,1) 100%);
+                }
+            }
+        }
     }
 }

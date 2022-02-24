@@ -1,3 +1,5 @@
+// const { default: Vue } = require("vue");
+
 var vm = new Vue({
   el: "#section01",
   data: {
@@ -31,10 +33,10 @@ var vm = new Vue({
     text1:
       "サロントリートメントを受けたお客様とサロンの思いは？",
     // h3
-    text2: "そんなお客様に美容師・サロンケアから、週2回、ご自宅でのケアで<br>「TOKIOインカラミの効果が最大１ヶ月持続」する<br>TOKIO HOMEのご提案です。",
+    text2: "そんなお客様に美容師・サロンケアから、<br>週2回、ご自宅でのケアで<br>「TOKIOインカラミの効果が最大１ヶ月持続」する<br>TOKIO HOMEのご提案です。",
 
     // h4
-    text3: 'その持続の理由は簡単!!サロンで使用するトリートメントと同じ成分を使用した”業界初の集中ケアマスク”',
+    text3: 'その持続の理由は簡単!!<br>サロンで使用するトリートメントと同じ成分を使用した<br>”業界初の集中ケアマスク”',
 
     // h5
     text4: "TOKIOインカラミサロントリートメント【4番】と同じ成分",
@@ -104,5 +106,15 @@ var vm = new Vue({
         }
       ]
      
+  }
+});
+
+var vm = new Vue({
+  el: '#section06',
+  data: {
+    images: [
+      {imgURL: 'images/tokio_bg001.png', alt: 'TOKIO インカラミ'},
+      {imgURL: 'images/tokio_bg002.png', alt: 'TOKIO インカラミ HEAD SPA'},
+    ]
   }
 });
