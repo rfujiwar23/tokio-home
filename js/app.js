@@ -87,5 +87,22 @@ var vm = new Vue({
         },
       ]
     }
-  });
+});
 
+var vm = new Vue({
+  el: "#section05",
+  data: {
+      topText: 'サロンはこちらから',
+      salonType: [
+        {
+          img: '',
+          text: 'tokio.tokyoサロン掲載サイト',
+        },
+        {
+          img: '',
+          text: 'カミスマビューティーサロン予約サイト',
+        }
+      ]
+     
+  }
+});

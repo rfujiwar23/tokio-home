@@ -1,5 +1,8 @@
+
+
 .main {
   background: #ffeece;
+  overflow-x: hidden;
 }
 .main .sect01 {
   padding: 5vh 0;
