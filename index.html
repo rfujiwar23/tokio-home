@@ -23,6 +23,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
 
   </head>
+
   <body>
 
 
@@ -45,7 +46,7 @@
                 IFING BEAUTY
               </div>
             </div>
-            <div class="col-6 text-right">
+            <div class="col-6" style="text-align: right;">
               <div class="mr-auto">
                 <!-- <a href="#" class="p-2 pl-0"><span class="icon-twitter"></span></a> -->
                 <!-- <a href="#" class="p-2 pl-0"><span class="icon-facebook"></span></a> -->
@@ -59,6 +60,8 @@
         </div>
       </div>
 
+      
+
       <div class="site-navbar site-navbar-target js-sticky-header">
         <div class="container">
           <div class="row align-items-center">
@@ -68,15 +71,15 @@
             <div class="col-10">
               <nav class="site-navigation text-right" role="navigation">
                 <div class="container">
-                  <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+                  <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3" style="float:right;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
 
                   <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
                     <li class="active"><a href="#home-section" class="nav-link">Home</a></li>
-                    <li><a href="#classes-section" class="nav-link">Section - 1</a></li>
-                    <li><a href="#about-section" class="nav-link">Section - 2</a></li>
-                    <li><a href="#events-section" class="nav-link">私のTOKIO HOME１ヶ月体験</a></li>
-                    <li><a href="#gallery-section" class="nav-link">Section - 4</a></li>
-                    <li><a href="#contact-section" class="nav-link">Section - 5</a></li>
+                    <li><a href="#classes-section" class="nav-link">Sect01</a></li>
+                    <li><a href="#about-section" class="nav-link">Sect02</a></li>
+                    <li><a href="#events-section" class="nav-link">１ヶ月体験</a></li>
+                    <li><a href="#gallery-section" class="nav-link">Sect04</a></li>
+                    <li><a href="#contact-section" class="nav-link">Sect05</a></li>
                   </ul>
                 </div>
               </nav>
@@ -153,11 +156,13 @@
               <div class="col-lg-3 col-md-4 col-sm-6">
                 <img src="images/tokio-inkarami-home.png" alt="" class="img-fluid">
               </div>
-              <div class="col-lg-9 col-md-8 col-sm-6">
+              <div class="col-lg-9 col-md-8 col-sm-6 my-auto">
                 <div class="row">
-                  <div class="col-lg-3 characteristics" v-for="part in parts">
-                    <h5>{{part.heading}}</h5>
-                    <p>{{part.body}}</p>
+                  <div class="col-lg-3 col-md-6 col-sm-6" v-for="part in parts">
+                    <div class="parts" style="height:100%;">
+                      <h5>{{part.heading}}</h5>
+                      <p>{{part.body}}</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -168,22 +173,95 @@
       </section>
       <!-- 漫画セクション -->
       <section class="sect03">
-        <div class="container">
-          <img src="images/manga-1.jpg" alt="漫画１" class="img-fluid">
+        <div class="container-fluid">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active my-auto">
+                <div class="manga">
+                  <img src="images/IMG_1546.PNG" alt="漫画１" class="img">
+                </div>
+              </div>
+              <div class="carousel-item my-auto">
+                <div class="manga">
+                  <img src="images/IMG_1547.PNG" alt="漫画１" class="img">
+                </div>
+              </div>
+              <div class="carousel-item my-auto">
+                <div class="manga">
+                  <img src="images/IMG_1548.PNG" alt="漫画１" class="img">
+                </div>
+              </div>
+              <div class="carousel-item my-auto">
+                <div class="manga">
+                  <img src="images/IMG_1549.PNG" alt="漫画１" class="img">
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>   
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="img-box"><img src="https://res.cloudinary.com/rfujiwar23/image/upload/v1645752052/IMG_1546.png" alt="" class=""></div>
+              </div>
+                  <div class="carousel-item">
+                <div class="img-box"><img src="https://res.cloudinary.com/rfujiwar23/image/upload/v1645753010/IMG_1547.png" alt="" class=""></div>
+              </div>
+              <div class="carousel-item">
+                <div class="img-box"><img src="https://res.cloudinary.com/rfujiwar23/image/upload/v1645752155/IMG_1548.png" alt="" class=""></div>
+              </div>
+              <div class="carousel-item">
+                <div class="img-box"><img src="https://res.cloudinary.com/rfujiwar23/image/upload/v1645753043/IMG_1549.png" alt="" class=""></div>
+              </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+              <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+              <i class="fa fa-angle-right"></i>
+            </a>
+          </div> -->
         </div>
+        
+        
       </section>
       <!-- ご自宅での使い方 -->
       <section class="sect04" id="section04">
-        <h2>ご自宅での使い方</h2>
-        <div id="section04-01"></div>
-        <div class="row">
-          <div class="col-sm-6 col-md-3" v-for="step in steps">
-            <div class="img">
-              <img src="step.img" :alt="step.alt">
-            </div>
-            <div class="text">
-              <h6><span>{{step.id}}</span></h6>
-              <p>{{step.body}}</p>
+        
+        <div class="container">
+          <h2>ご自宅での使い方</h2>
+          <h3 id="section04-01"></h3>
+          <div class="row steps">
+            <div class="step-col col-sm-6 col-md-3" v-for="step in steps">
+              <div class="img">
+                <img src="step.img" :alt="step.alt">
+              </div>
+              <div class="text">
+                <h6><span>{{step.id}}</span></h6>
+                <p>{{step.body}}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -193,9 +271,31 @@
 
       <section class="sect05" id="section05">
         <div id="section05-01"></div>
-        <div class="secttion05-manga"></div>
-        <div id="section05-02"></div>
-        <div id="section05-03"></div>
+        <div class="container">
+          <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1">
+            <div class="row section05-manga">
+              <div class="col-6"><img src="images/section05-01.jpg" alt="" class="img-fluid"></div>
+              <div class="col-6 quote">
+                <div class="text">
+                  <p>
+                    サロンAとサロンBで同じTOKIOインカラミなのに仕上がりが違う！
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row section05-manga">
+              <div class="col-6 quote">
+                <div class="text">
+                 <p>
+                   実は私も前回と今回で持続が違う！やっぱりホームケアも大切
+                 </p>
+                </div>
+              </div>
+              <div class="col-6"><img src="images/section05-02.jpg" alt="" class="img-fluid"></div>
+            </div>
+          </div>
+          <h4 id="section05-02"></h4>
+          <h4 id="section05-03"></h4>
         <h3>{{topText}}</h3>
         <div class="row">
           <div class="col-sm-6" v-for="salon in salonType">
@@ -206,10 +306,12 @@
           </div>
         </div>
         <div id="section05-04"></div>
+        </div>
+        
       </section>
 
       <section class="sect06" id="section06">
-        <h3>更に「イエでインカラミできる毎日」のケアは</h3>
+        <h3>{{topText}}</h3>
         <div class="container">
           <div id="section06-01"></div>
         <div class="row">
@@ -223,7 +325,7 @@
         
         <div class="video-area mt-4 py-2 px-4">
           <div class="embed-responsive embed-responsive-16by9">
-            <video controls controlsList="nodownload" autoplay muted src="images/video/ocean-tokyo-takagi.mp4"></video>
+            <video controls controlsList="nodownload" autoplay muted src="images/video/ocean-tokyo-takagi.mp4" ></video>
           </div>
         </div>
         </div>

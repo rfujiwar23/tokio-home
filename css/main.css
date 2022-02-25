@@ -3,6 +3,102 @@ body {
   font-family: "Shippori Mincho", serif;
 }
 
+.col-center {
+  margin: 0 auto;
+  float: none !important;
+}
+
+.carousel {
+  padding: 0 70px;
+}
+.carousel .carousel-item {
+  color: #999;
+  font-size: 14px;
+  text-align: center;
+  overflow: hidden;
+  min-height: 290px;
+}
+.carousel .carousel-item .img-box {
+  margin: 0 auto;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+.carousel .img-box {
+  width: 60%;
+  margin: 0 auto;
+}
+.carousel .img-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.carousel .testimonial {
+  padding: 30px 0 10px;
+}
+.carousel .overview {
+  font-style: italic;
+}
+.carousel .overview b {
+  text-transform: uppercase;
+  color: #7AA641;
+}
+
+.carousel-control-prev {
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  top: 50%;
+  background: none;
+}
+.carousel-control-prev i {
+  font-size: 68px;
+  line-height: 42px;
+  position: absolute;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  top: 50%;
+  background: none;
+}
+.carousel-control-next i {
+  font-size: 68px;
+  line-height: 42px;
+  position: absolute;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+
+.carousel-indicators {
+  bottom: -40px;
+}
+.carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  margin: 1px 3px;
+  border-radius: 50%;
+  border: none;
+  background: #999;
+  border-color: transparent;
+  box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.carousel-indicators li.active {
+  width: 12px;
+  height: 12px;
+  margin: 1px 3px;
+  border-radius: 50%;
+  border: none;
+  background: #555;
+  box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .main {
   background: #ffeece;
   overflow-x: hidden;
@@ -20,9 +116,8 @@ body {
 .main .sect01 .sect01-03 .points .contents {
   background: aquamarine;
   padding: 10px;
-}
-.main .sect01 .sect01-03 .points .contents h4 {
-  font-size: 1em;
+  height: 100% h4;
+  height-font-size: 1em;
 }
 .main .sect01 .sect01-03 .points .contents h5 {
   font-size: 1.25em;
@@ -79,6 +174,95 @@ body {
   text-align: center;
   font-size: 1.5em;
 }
+.main .sect02 .sect02-01 .product-info {
+  width: 96%;
+  margin: 0 auto;
+}
+.main .sect02 .sect02-01 .product-info .parts {
+  margin: 0 auto;
+  padding: 10px 5px;
+  background: #fff;
+  border: 3px solid rgba(122, 122, 122, 0.7);
+}
+.main .sect02 .sect02-01 .product-info .parts h5 {
+  font-size: 1em;
+  margin-left: 0;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #9a9a9a;
+}
+.main .sect02 .sect02-01 .product-info .parts p {
+  font-size: 0.9em;
+  padding: 5px 7px;
+}
+.main .sect03 {
+  height: 100%;
+  background: #8f8fe6;
+}
+.main .sect03 .container-fluid {
+  padding: 40px 0;
+}
+.main .sect03 .container-fluid .carousel .carousel-item .manga {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .sect03 .container-fluid .carousel .carousel-item .manga img {
+  max-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .sect04 h3 {
+  text-align: center;
+}
+.main .sect04 .steps {
+  margin: 10vh auto;
+}
+.main .sect04 .steps .step-col {
+  margin-bottom: 20px;
+}
+.main .sect04 .steps .step-col .img {
+  border: 1px solid #000;
+}
+.main .sect04 .steps .step-col .text {
+  margin-top: 2vh;
+  padding: 10px;
+  border: 1px solid #202020;
+}
+.main .sect04 .steps .step-col .text h6 {
+  margin-left: 5px;
+}
+.main .sect04 .steps .step-col .text h6 span {
+  font-size: 1.25em;
+  background: #9a9a9a;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 50%;
+}
+.main .sect04 .steps .step-col .text p {
+  color: #202020;
+}
+.main .sect05 #section05-01 {
+  text-align: center;
+  margin: 4vh auto;
+  font-size: 2em;
+}
+.main .sect05 .container .section05-manga .quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .sect05 .container .section05-manga .quote p {
+  padding: 20px;
+  background: rgba(122, 122, 122, 0.7);
+  color: #fff;
+}
+.main .sect05 .container h4 {
+  text-align: center;
+  margin: 4vh 0;
+}
 .main .sect06 .to-link {
   margin-top: 5vh;
   text-align: center;
@@ -97,6 +281,39 @@ body {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.66);
   background: #e4e2e0;
   background: linear-gradient(60deg, #e4e2e0 0%, #dac1a9 100%);
+}
+.main .sect06 .video-area video {
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media screen and (max-width: 768px) {
+  .main .sect03 .container {
+    padding: 20px 0;
+  }
+  .main .sect03 .container .carousel {
+    height: 100%;
+  }
+  .main .sect03 .container .carousel .carousel-item {
+    height: calc(100vh - 62.5px);
+  }
+  .main .sect03 .container .carousel .carousel-item .manga {
+    min-height: 75vh;
+    margin: -20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .sect03 .container .carousel .carousel-item .manga img {
+    max-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel {
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

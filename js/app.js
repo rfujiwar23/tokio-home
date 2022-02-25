@@ -61,16 +61,16 @@ var vm = new Vue({
         body: 'セラミド、18MEA,トレハロースなどの保湿成分によって、水分と油分のバランスを整えます',
       },
       {
-        heading: '髪に潤いを与える',
-        body: 'セラミド、18MEA,トレハロースなどの保湿成分によって、水分と油分のバランスを整えます',
+        heading: '持続を高める',
+        body: '毛髪の質感を補うことによって、TOKIOインカラミの効果実感の持続をサポートします。',
       },
       {
-        heading: '髪に潤いを与える',
-        body: 'セラミド、18MEA,トレハロースなどの保湿成分によって、水分と油分のバランスを整えます',
+        heading: '紫外線から守る',
+        body: 'フラーレンの働きによって、活性酸素を除去します。',
       },
       {
-        heading: '髪に潤いを与える',
-        body: 'セラミド、18MEA,トレハロースなどの保湿成分によって、水分と油分のバランスを整えます',
+        heading: 'ダメージケア',
+        body: '髪に栄養を与えながら、バリア機能をもたらしていきます。',
       }
 
     ]
@@ -132,6 +132,7 @@ var vm = new Vue({
 var vm = new Vue({
   el: '#section06',
   data: {
+    topText: '更に「イエでインカラミできる毎日」のケアは',
     images: [
       {imgURL: 'images/tokio_bg001.png', alt: 'TOKIO インカラミ'},
       {imgURL: 'images/tokio_bg002.png', alt: 'TOKIO インカラミ HEAD SPA'},
