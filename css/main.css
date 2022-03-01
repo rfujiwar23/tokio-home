@@ -1,5 +1,4 @@
 body {
-  font-family: "PT Serif", serif;
   font-family: "Shippori Mincho", serif;
 }
 
@@ -107,33 +106,92 @@ body {
   padding: 5vh 0;
   text-align: center;
 }
+.main .sect01 .sect01-top {
+  margin: 3vh auto;
+}
+.main .sect01 .sect01-top h3 {
+  line-height: 2em;
+  font-size: 1.5em;
+}
+.main .sect01 .sect01-top h4 {
+  font-size: 2em;
+  margin-top: 4vh;
+  color: #bb1e1e;
+  font-weight: bold;
+}
+.main .sect01 .sect01-01 {
+  width: 85%;
+  margin: 0 auto;
+}
+.main .sect01 .sect01-01 .card-header {
+  padding: 5px 10px;
+  background: #fff;
+}
+.main .sect01 .sect01-01 .card-header h4 {
+  font-size: 1em;
+}
+.main .sect01 .sect01-01 .card-image-text {
+  position: relative;
+}
+.main .sect01 .sect01-01 .card-image-text .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+.main .sect01 .sect01-01 .card-image-text .overlay p {
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+.main .sect01 .sect01-02 {
+  margin: 4vh auto;
+}
+.main .sect01 .sect01-02 h3 {
+  margin-top: 3vh;
+}
+.main .sect01 .sect01-02 h4 {
+  margin-top: 3vh;
+  font-size: 2em;
+  font-style: italic;
+  font-weight: bold;
+}
+.main .sect01 .sect01-02 h4 span {
+  font-size: 1.5em;
+}
 .main .sect01 .sect01-03 {
   margin: 4vh auto;
+  width: 100%;
+  max-width: 900px;
+  padding-top: calc(515/900);
+}
+.main .sect01 .sect01-03 h3 {
+  line-height: 1.5em;
+}
+.main .sect01 .sect01-03 h5 {
+  margin-top: 3vh;
 }
 .main .sect01 .sect01-03 .points {
   margin: 2vh auto;
 }
 .main .sect01 .sect01-03 .points .contents {
-  background: aquamarine;
+  background: rgba(255, 255, 255, 0.8);
   padding: 10px;
-  height: 100% h4;
-  height-font-size: 1em;
+  height: 100%;
+}
+.main .sect01 .sect01-03 .points .contents h4 {
+  font-size: 1em;
 }
 .main .sect01 .sect01-03 .points .contents h5 {
   font-size: 1.25em;
   margin-top: 5px;
 }
-.main .sect01 .sect01-03 .points .contents h5:before {
-  content: "~";
-  padding-right: 5px;
-}
-.main .sect01 .sect01-03 .points .contents h5:after {
-  content: "~";
-  padding-left: 5px;
-}
 .main .sect01 .sect01-03 .points .contents p {
   color: #000;
-  padding: 20px;
+  padding: 20px 10px;
   font-weight: normal;
 }
 .main .sect02 {
@@ -151,6 +209,8 @@ body {
   margin: 10px;
   text-align: center;
   background: #fff;
+  height: 100%;
+  padding: 10px;
 }
 .main .sect02 .sect02-01 .voices .v-col .content h4 {
   margin-top: 10px;
@@ -161,10 +221,11 @@ body {
 }
 .main .sect02 .sect02-01 h3 {
   text-align: center;
-  line-height: 1.5em;
+  line-height: 2em;
 }
 .main .sect02 .sect02-01 h4 {
   text-align: center;
+  line-height: 2em;
 }
 .main .sect02 .sect02-01 h5 {
   margin-left: 20px;
@@ -176,7 +237,7 @@ body {
 }
 .main .sect02 .sect02-01 .product-info {
   width: 96%;
-  margin: 0 auto;
+  margin: 8vh auto;
 }
 .main .sect02 .sect02-01 .product-info .parts {
   margin: 0 auto;
@@ -198,6 +259,20 @@ body {
 .main .sect03 {
   height: 100%;
   background: #8f8fe6;
+  position: relative;
+}
+.main .sect03 .sect03-title {
+  position: absolute;
+  top: 6%;
+  left: 5%;
+  transform: rotate(-15deg);
+  z-index: 8;
+}
+.main .sect03 .sect03-title h2 {
+  color: #bb1e1e;
+  background: white;
+  padding: 5px 10px;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.8);
 }
 .main .sect03 .container-fluid {
   padding: 40px 0;
@@ -234,13 +309,6 @@ body {
 .main .sect04 .steps .step-col .text h6 {
   margin-left: 5px;
 }
-.main .sect04 .steps .step-col .text h6 span {
-  font-size: 1.25em;
-  background: #9a9a9a;
-  color: #fff;
-  padding: 5px 12px;
-  border-radius: 50%;
-}
 .main .sect04 .steps .step-col .text p {
   color: #202020;
 }
@@ -262,6 +330,43 @@ body {
 .main .sect05 .container h4 {
   text-align: center;
   margin: 4vh 0;
+}
+.main .sect05 .container .text-area {
+  display: none;
+}
+.main .sect05 .container .link-to {
+  position: relative;
+}
+.main .sect05 .container .link-to img {
+  border-radius: 10px;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.33);
+}
+.main .sect05 .container .link-to:hover > .text-area {
+  display: block;
+  background: rgba(122, 122, 122, 0.33);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .sect05 .container .link-to:hover > .text-area a {
+  color: #fff;
+}
+.main .sect06 h3 {
+  text-align: center;
+}
+.main .sect06 #section06-01 {
+  text-align: center;
+}
+.main .sect06 #section06-01 h4 {
+  line-height: 2em;
 }
 .main .sect06 .to-link {
   margin-top: 5vh;
@@ -287,7 +392,31 @@ body {
   height: auto !important;
 }
 
+@media screen and (max-width: 992px) {
+  .main .sect01 .sect01-01 {
+    width: 100%;
+  }
+  .main .sect01 .sect01-01 .card-header h4 {
+    font-size: 0.8em;
+  }
+  .main .sect01 .sect01-01 .card-image-text .overlay {
+    padding: 10px;
+  }
+  .main .sect01 .sect01-01 .card-image-text .overlay p {
+    font-size: 0.9em;
+  }
+}
 @media screen and (max-width: 768px) {
+  .main .sect02 .sect02-01 .product-info .img {
+    margin: 4vh auto;
+  }
+  .main .sect03 .sect03-title {
+    top: 5%;
+    left: 1%;
+  }
+  .main .sect03 .sect03-title h2 {
+    font-size: 1.25em;
+  }
   .main .sect03 .container {
     padding: 20px 0;
   }

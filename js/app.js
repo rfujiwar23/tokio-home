@@ -4,7 +4,7 @@ var vm = new Vue({
   el: "#section01",
   data: {
     message:
-      "サロンメニューで行う4ステップのトリートメントメニュー。髪のダメージやお客様のお悩みを解決します",
+      "サロンメニューで行う4ステップのトリートメントメニュー。<br>髪のダメージやお客様のお悩みを解決します",
     threePoints: [
       {
         subtitle: "特許技術",
@@ -85,25 +85,25 @@ var vm = new Vue({
         steps: [
         {
             id:1,
-            img: '',
+            img: 'images/tkh.png',
             body: 'シャンプー後に水分をしっかり切る',
             alt: "シャンプー後に",
         },
         {
             id:2,
-            img: '',
+            img: 'images/tkh.png',
             body: '手のひらに3センチ程スライム状のHOMEを出してから',
             alt: "TOKIO HOMEを手に",
         },
         {
             id:3,
-            img: '',
+            img: 'images/tkh.png',
             body: 'クリームになるまで手のひらでしっかり伸ばします',
             alt: "TOKIO HOMEをクリーム状に",
         },
         {
             id:4,
-            img: '',
+            img: 'images/tkh.png',
             body: '中間から毛先中心に馴染ませて5分ほど放置して流します',
             alt: "TOKIO HOMEを放置",
         },
@@ -117,11 +117,13 @@ var vm = new Vue({
       topText: 'サロンはこちらから',
       salonType: [
         {
-          img: '',
+          img: 'images/img-tokio.png',
+          link: 'http://tokio.tokyo/',
           text: 'tokio.tokyoサロン掲載サイト',
         },
         {
-          img: '',
+          img: 'images/img-kamisma.png',
+          link: 'https://beauty.kamisma.com/',
           text: 'カミスマビューティーサロン予約サイト',
         }
       ]

@@ -1,7 +1,7 @@
 $tokio-main: rgb(255,238,206);
 
 body {
-    font-family: 'PT Serif', serif;
+    // font-family: 'PT Serif', serif;
 font-family: 'Shippori Mincho', serif;
 }
 
@@ -123,33 +123,99 @@ font-family: 'Shippori Mincho', serif;
     .sect01 {
         padding:5vh 0;
         text-align: center;
+        .sect01-top {
+            margin:3vh auto;
+            h3 {
+                line-height: 2em;
+                font-size: 1.5em;
+            }
+            h4 {
+                font-size:2em;
+                margin-top:4vh;
+                color:rgb(187, 30, 30);
+                font-weight:bold;
+            }
+        }
+        .sect01-01 {
+            width:85%;
+            margin:0 auto;
+            .card-header {
+                padding:5px 10px;
+                background:#fff;
+                h4 {
+                    font-size:1em;
+                }
+            }
+            .card-image-text {
+                position:relative;
+                .overlay {
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    width:100%;
+                    height:100%;
+                    background:rgba(0,0,0,0.25);
+                    padding:20px;
+                    p {
+                        color:#fff;
+                        font-size:1.25em;
+                        font-weight: bold;
+                    }
+
+                }
+            }
+        }
+        .sect01-02 {
+            margin:4vh auto;
+            h3 {
+                margin-top: 3vh;
+            }
+            h4 {
+                margin-top:3vh;
+                font-size: 2em;
+                font-style: italic;
+                font-weight: bold;
+                span {
+                    font-size:1.5em;
+                }
+            }
+        }
         .sect01-03 {
             margin:4vh auto;
+            // background:aquamarine;
+            width:100%;
+            max-width: 900px;
+            padding-top:calc(515/900);
+            // margin:0 auto;
+            h3 {
+                line-height: 1.5em;
+            }
+            h5 {
+                margin-top:3vh;
+            }
+            // padding:3vh 0;
             .points {
                 // padding:10px;
+                
                 margin:2vh auto;
                 .contents {
-                    background:aquamarine;
+                    // background:aquamarine;
+                    background:rgba(255,255,255,0.8);
+
+                    
+
                     padding:10px;
-                    height:100%
+                    height:100%;
                     h4 {
                         font-size:1em;
                     }
                     h5 {
                         font-size:1.25em;
                         margin-top:5px;
-                        &:before {
-                            content: '~';
-                            padding-right:5px;
-                        }
-                        &:after {
-                            content: '~';
-                            padding-left:5px;
-                        }
                     }
                     p {
                         color:#000;
-                        padding:20px;
+                        padding:20px 10px;
                         font-weight: normal;
                     }
                 }
@@ -171,6 +237,8 @@ font-family: 'Shippori Mincho', serif;
                         margin:10px;
                         text-align: center;
                         background:#fff;
+                        height:100%;
+                        padding:10px;
                         h4 {
                             margin-top:10px;
                         }
@@ -183,10 +251,11 @@ font-family: 'Shippori Mincho', serif;
             }
             h3 {
                 text-align: center;
-                line-height: 1.5em;
+                line-height: 2em;
             }
             h4 {
                 text-align: center;
+                line-height: 2em;
             }
             h5 {
                 margin-left:20px;
@@ -198,7 +267,7 @@ font-family: 'Shippori Mincho', serif;
             }
             .product-info {
                 width:96%;
-                margin:0 auto;
+                margin:8vh auto;
                 .parts {
                     // width:98%;
                     margin:0 auto;
@@ -228,6 +297,20 @@ font-family: 'Shippori Mincho', serif;
         height:100%;
         // height:calc(100vh - 62.5px);
         background:rgb(143, 143, 230);
+        position:relative;
+        .sect03-title {
+            position: absolute;
+            top:6%;
+            left:5%;
+            transform: rotate(-15deg);
+            z-index: 8;
+            h2 {
+                color:rgb(187, 30, 30);
+                background:rgb(255,255,255);
+                padding:5px 10px;
+                box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.8);
+            }
+        }
         .container-fluid {
             padding:40px 0;
             .carousel {
@@ -273,13 +356,13 @@ font-family: 'Shippori Mincho', serif;
                     border: 1px solid rgb(32,32,32);
                     h6 {
                         margin-left:5px;
-                        span {
-                            font-size:1.25em;
-                            background:#9a9a9a;
-                            color:#fff;
-                            padding:5px 12px;
-                            border-radius: 50%;
-                        }
+                        // span {
+                        //     font-size:1.25em;
+                        //     background:#9a9a9a;
+                        //     color:#fff;
+                        //     padding:5px 12px;
+                        //     border-radius: 50%;
+                        // }
                     }
                     p {
                         color:rgb(32, 32, 32);
@@ -312,12 +395,51 @@ font-family: 'Shippori Mincho', serif;
                 text-align: center;
                 margin:4vh 0;
             }
+            .text-area {
+                display:none;
+            }
+            .link-to {
+                position:relative;
+                img {
+                    border-radius: 10px;
+                    box-shadow: 1px 3px 6px rgba(0,0,0,0.33);
+                }
+                &:hover > .text-area {
+                    display: block;
+                    background:rgba(122, 122, 122,0.33);
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    height:100%;
+                    width:100%;
+                    border-radius: 10px;
+                    margin-top:auto;
+                    margin-bottom:auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    a {
+                        color:#fff;
+                    }
+                }
+            }
+            
         }
+        
     }
 
     
 
     .sect06 {
+        h3 {
+            text-align:center;
+        }
+        #section06-01 {
+            text-align: center;
+            h4 {
+                line-height: 2em;   
+            }
+        }
         .to-link {
             margin-top:5vh;
             text-align: center;
@@ -348,12 +470,56 @@ font-family: 'Shippori Mincho', serif;
     }
 }
 
+@media screen and (max-width: 992px) {
+    .main {
+        .sect01 {
+            .sect01-01 {
+                width:100%;
+                .card-header {
+                    h4 {
+                        font-size: 0.8em;
+                    }
+
+                }
+                .card-image-text {
+                    .overlay {
+                        padding:10px;
+                        p {
+                            font-size: 0.9em;
+                        }
+                    }
+                }
+            }
+            // .sect01-03 {
+
+            // }
+        }
+        
+    }
+}
+
 @media screen and (max-width: 768px) {
     .main {
+        .sect02 {
+            .sect02-01 {
+                .product-info {
+                    .img {
+                        margin:4vh auto;
+                    }
+                }
+            }
+        }
         .sect03 {
             // height:100%;
             // height:100vh;
             // background:rgb(143, 143, 230);
+            .sect03-title {
+                top:5%;
+                left:1%;
+                h2 {
+                    font-size:1.25em;
+                }
+            }
             .container {
                 padding:20px 0;
                 .carousel {
