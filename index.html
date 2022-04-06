@@ -153,12 +153,12 @@
       <div class="sect01-03">
         <div class="product-list" id="section01">
           <h3 v-html="message"></h3>
-          <div class="row">
+          <div class="row my-5">
 
             <div v-for="point in threePoints" class="points col-md-4 col-8">
               <div class="contents">
                 <h4>{{point.subtitle}}</h4>
-                <h5>{{point.subtitle2}}</h5>
+                <h5><span>{{point.subtitle2}}</span></h5>
                 <hr>
                 <p>{{point.text}}</p>
               </div>
@@ -176,8 +176,10 @@
           <div class="row">
             <div class="v-col col-sm-6" v-for="voice in voices">
               <div class="content">
-                <h4>{{voice.heading}}</h4>
-                <hr>
+                <div class="top">
+                  <h4>{{voice.heading}}</h4>
+                </div>
+                
                 <p>{{voice.body}}</p>
               </div>
             </div>

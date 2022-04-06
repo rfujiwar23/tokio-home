@@ -200,7 +200,9 @@ font-family: 'Shippori Mincho', serif;
                 margin:2vh auto;
                 .contents {
                     // background:aquamarine;
-                    background:rgba(255,255,255,0.8);
+                    background: rgb(224,224,224);
+                    background: linear-gradient(180deg, rgba(224,224,224,1) 0%, rgba(252,252,252,1) 54%); 
+                    border:1px solid #555;
 
                     
 
@@ -208,15 +210,36 @@ font-family: 'Shippori Mincho', serif;
                     height:100%;
                     h4 {
                         font-size:1em;
+                        font-weight: 700;
+                        color:rgb(25, 26, 45);
+                        &::before {
+                            content: '~';
+                            font-family: "Font Awesome 5 Free";
+                            content: '\f0d9';
+                            padding-right:4px;
+                        }
+                        &::after {
+                            content: '~';
+                            font-family: "Font Awesome 5 Free";
+                            content: '\f0da';
+                            padding-left:4px;
+                        }
                     }
+                    
                     h5 {
                         font-size:1.25em;
                         margin-top:5px;
+                       span {
+                        padding-bottom:3px;
+                        border-bottom: 1px solid rgb(65, 65, 65);
+                       }
                     }
                     p {
-                        color:#000;
-                        padding:20px 10px;
+                        // background:#fdde83;
+                        // height:100%;
+                        padding:20px 5px;
                         font-weight: normal;
+                        text-align:left;
                     }
                 }
             }
@@ -227,6 +250,9 @@ font-family: 'Shippori Mincho', serif;
         margin:3vh auto;
         .sect02-01 {
             margin:4vh auto;
+            h2 {
+                text-align: center;
+            }
             .voices {
                 
                 width:100%;
@@ -238,13 +264,20 @@ font-family: 'Shippori Mincho', serif;
                         text-align: center;
                         background:#fff;
                         height:100%;
-                        padding:10px;
-                        h4 {
-                            margin-top:10px;
+                        box-shadow: 1px 3px 6px rgba(122, 122, 122,0.7);
+                        // padding:10px;
+                        .top {
+                            padding:10px;
+                            background:rgb(50,50,50);
+                            h4 {
+                                font-weight: 800;
+                                color:#fff;
+                            }
                         }
                         p {
                             color:#000;
                             font-size:1.15em;
+                            padding:20px 10px;
                         }
                     }
                 }
@@ -302,7 +335,7 @@ font-family: 'Shippori Mincho', serif;
     .sect03 {
         height:100%;
         // height:calc(100vh - 62.5px);
-        background:rgb(143, 143, 230);
+        // background:rgb(143, 143, 230);
         position:relative;
         .sect03-title {
             position: absolute;
@@ -346,12 +379,13 @@ font-family: 'Shippori Mincho', serif;
     }
 
     .sect04 {
-        padding:4vh 0;
+        padding:6vh 0;
         h2 {
             text-align:center;
         }
         h3 {
             text-align:center;
+            line-height: 2em;
         }
         .steps {
             margin:10vh auto;
