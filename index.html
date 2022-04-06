@@ -19,6 +19,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,400;1,700&family=Shippori+Mincho&display=swap"
     rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css" />
@@ -185,14 +186,25 @@
           <h3 v-html="text2"></h3>
           <!-- image goes in here -->
           <!-- image goes in here -->
-          <div class="row mx-0 my-5">
-            <div class="col-lg-7 col-md-7 col-sm-7 col-7 mx-auto">
+          
+            
+             <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-8 offset-sm-2 my-4">
               <img src="images/tokioimg100.png" alt="" class="img-fluid">
-            </div>
-            <div class="col-lg-5 col-md-5 col-md-5 col-5 mx-auto" >
+             </div>
+
+             <div class="plus col-lg-2 offset-lg-5 col-md-2 offset-md-5 col-sm-4 offset-sm-4 col-4 offset-4">
+              <i class="fa-solid fa-plus"></i>
+             </div>
+
+             <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 col-sm-8 offset-sm-2 my-4">
+              <!-- <img src="images/tokioimg100.png" alt="" class="img-fluid"> -->
               <img src="images/tokioimg101.png" alt="" class="img-fluid">
-            </div>
-          </div>
+             </div>
+            
+            
+              
+            
+          
           <h4 v-html="text3"></h4>
           <hr>
           <h5 v-html="text4"></h5>
@@ -232,22 +244,22 @@
           <div class="carousel-inner">
             <div class="carousel-item active my-auto">
               <div class="manga">
-                <img src="images/IMG_1546.PNG" alt="漫画１" class="img">
+                <img src="images/tokio-page1.png" alt="漫画１" class="img">
               </div>
             </div>
             <div class="carousel-item my-auto">
               <div class="manga">
-                <img src="images/IMG_1547.PNG" alt="漫画１" class="img">
+                <img src="images/tokio-page2.png" alt="漫画１" class="img">
               </div>
             </div>
             <div class="carousel-item my-auto">
               <div class="manga">
-                <img src="images/IMG_1548.PNG" alt="漫画１" class="img">
+                <img src="images/tokio-page3.png" alt="漫画１" class="img">
               </div>
             </div>
             <div class="carousel-item my-auto">
               <div class="manga">
-                <img src="images/IMG_1549.PNG" alt="漫画１" class="img">
+                <img src="images/tokio-page4.png" alt="漫画１" class="img">
               </div>
             </div>
           </div>
@@ -313,11 +325,11 @@
           </div>
         </div>
       </div>
-      <div id="section04-02"></div>
-      <div id="section04-03"></div>
+      <h3 id="section04-02"></h3>
+      <h3 id="section04-03"></h3>
     </section>
 
-    <section class="sect05" id="section05">
+    <!-- <section class="sect05" id="section05">
       <div id="section05-01"></div>
       <div class="container">
         <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1">
@@ -353,40 +365,112 @@
                </div>
               <img :src="salon.img" :alt="salon.text">
             </div>
-            <!-- <p>{{salon.text}}</p> -->
           </div>
         </div>
         <h4 id="section05-04"></h4>
       </div>
 
-    </section>
+    </section> -->
 
-    <section class="sect06" id="section06">
-      <h3>{{topText}}</h3>
-      <div class="container">
-        <div id="section06-01"></div>
-        <div class="row">
-          <div class="col-6 col-sm-6" v-for="image in images">
-            <img :src="image.imgURL" :alt="image.alt">
+    <section class="sect09">
+
+      <div class="container" id="section09">
+        <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+          <div class="row section05-manga">
+            <div class="col-6"><img src="images/section05-01.jpg" alt="" class="img-fluid"></div>
+            <div class="col-6 quote">
+              <div class="text">
+                <p>
+                  TOKIOトリートメントやってるお店はたくさんあるけど、
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row section05-manga">
+            <div class="col-6 quote">
+              <div class="text">
+                <p>
+                  実は私も前回と今回で持続が違う！やっぱりホームケアも大切
+                </p>
+              </div>
+            </div>
+            <div class="col-6"><img src="images/section05-02.jpg" alt="" class="img-fluid"></div>
           </div>
         </div>
+        <h4>実は、<br>トキオインカラミトリートメント<br>成功サロンは</h4>
+        <!-- font awesome arrow goes down here -->
+        <h4>必ず<br>『トキオインカラミトリートメント』<br>＋<br>『TOKIO HOME付』<br>
+          を実施しています。</h4>
+        <h3 class="text-center mb-5">そんなサロンはこちら↓↓↓</h3>
+        <div class="row col-lg-8 offset-lg-2 col-md-10 offset-md-1 reserve">
+          <div class="col-sm-6" v-for="salon in salonType">
+            <div class="link-to">
+              <div class="text-area">
+                <a :href="salon.link">{{salon.text}}へ</a>
+              </div>
+              <img :src="salon.img" :alt="salon.text" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <h4>いつも来店されてるサロンも紹介されてますよ！！</h4>
+      </div>
+
+    </section>
+
+    <section class="sect10" id="section10">
+      <div class="section-strip">
+        <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1">
+          <h2 class="no-background"><span>更に「イエでインカラミする毎日」のケアは</span></h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="section10-01">
+          <h3>週2回のTOKIO HOMEと<br>
+            毎日のTOKIO IEシャンプートリートメントで<br>
+            「イエでもインカラミ体験」</h3>
+          <div class="row pics">
+            <!-- <div class="col-6 col-sm-6" v-for="pic in tokiopics">
+                  <img :src="pic.imgLink" :alt="image.altText">
+                </div> -->
+            <div class="col-6 col-sm-6">
+              <img src="images/tokio_bg001.png" class="img-fluid" alt="TOKIO HYPER INKARAMI">
+            </div>
+            <div class="col-6 col-sm-6">
+              <img src="images/tokio_bg002.png" class="img-fluid" alt="TOKIO HYPER INKARAMI">
+            </div>
+          </div>
+        </div>
+
         <div class="to-link">
-          <a href="https://ifing-beauty.com/" id="section06-02"></a>
+          <a href="https://ifing-beauty.com/">詳しくはこちら</a>
         </div>
 
         <div class="video-area mt-4 py-2 px-4">
           <div class="embed-responsive embed-responsive-16by9">
-            <video controls controlsList="nodownload" autoplay muted src="images/video/ocean-tokyo-takagi.mp4"></video>
+            <video controls controlsList="nodownload" autoplay muted loop
+              src="images/video/ocean-tokyo-takagi.mp4"></video>
           </div>
         </div>
       </div>
     </section>
+
+    
+    
   </div>
 
 
 
   <div class="footer">
-    <p>Copyright &copy; IFING Co., Ltd.</p>
+    <div class="container text-center">
+      
+      <p>Copyright &copy; IFING Co., Ltd. <script>document.write(new Date().getFullYear());</script></p>
+      <div class="links">
+        <ul>
+          <li><a href="https://www.ifing.com/company/">会社概要</a></li>
+          <li><a href="https://ifing-beauty.com/help/privacy">プライバシー・ポリシー</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 
 
@@ -397,6 +481,18 @@
   <script src="js/main.js"></script>
   <script src="js/app.js"></script>
   <script src="js/index.js"></script>
+
+  <script>
+     new Vue({
+    el: '#section09',
+    data: {
+        salonType: [
+            { img: 'images/img-kamisma.png', text: 'KAMISMA BEAUTY' },
+            { img: 'images/img-tokio.png', text: 'TOKIO' },
+          ]
+    }
+  });
+  </script>
 </body>
 
 </html>

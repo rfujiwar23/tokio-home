@@ -219,6 +219,12 @@ body {
   color: #000;
   font-size: 1.15em;
 }
+.main .sect02 .sect02-01 .plus {
+  text-align: center;
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.66);
+}
 .main .sect02 .sect02-01 h3 {
   text-align: center;
   line-height: 2em;
@@ -288,6 +294,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.main .sect04 {
+  padding: 4vh 0;
+}
+.main .sect04 h2 {
+  text-align: center;
 }
 .main .sect04 h3 {
   text-align: center;
@@ -359,6 +371,9 @@ body {
 .main .sect05 .container .link-to:hover > .text-area a {
   color: #fff;
 }
+.main .sect06 {
+  padding-bottom: 10vh;
+}
 .main .sect06 h3 {
   text-align: center;
 }
@@ -391,6 +406,165 @@ body {
   width: 100% !important;
   height: auto !important;
 }
+.main .sect09 {
+  background: #aaaaaa;
+}
+.main .sect09 #section09 {
+  padding: 12vh 0;
+  background: #fff;
+}
+.main .sect09 #section05-01 {
+  text-align: center;
+  margin: 4vh auto;
+  font-size: 2em;
+}
+.main .sect09 .container .section05-manga .quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .sect09 .container .section05-manga .quote .text {
+  background: rgba(122, 122, 122, 0.7);
+  border-bottom: 3px solid #545454;
+}
+.main .sect09 .container .section05-manga .quote .text p {
+  padding: 20px;
+  color: #fff;
+  margin-bottom: 0;
+  font-family: "Klee One", cursive;
+}
+.main .sect09 .container h4 {
+  text-align: center;
+  margin: 4vh 0;
+  line-height: 2em;
+}
+.main .sect09 .container .text-area {
+  display: none;
+}
+.main .sect09 .container .link-to {
+  position: relative;
+}
+.main .sect09 .container .link-to img {
+  border-radius: 10px;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.33);
+}
+.main .sect09 .container .link-to:hover > .text-area {
+  display: block;
+  background: rgba(122, 122, 122, 0.33);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .sect09 .container .link-to:hover > .text-area a {
+  color: #fff;
+}
+.main .sect09 .container .reserve {
+  margin: 8vh auto;
+}
+.main .sect10 .section-strip {
+  background: #c6c6c6;
+  background: linear-gradient(0deg, #fdde83 0%, #ffecbf 100%);
+  padding: 20px 0;
+}
+.main .sect10 .section-strip h2.no-background {
+  position: relative;
+  overflow: hidden;
+  font-size: 1.25em;
+  font-family: "Klee One", cursive;
+}
+.main .sect10 .section-strip h2.no-background span {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  position: relative;
+  padding: 0 20px;
+  color: #000;
+}
+.main .sect10 .section-strip h2.no-background span:before, .main .sect10 .section-strip h2.no-background span:after {
+  content: "";
+  display: block;
+  width: 1000px;
+  position: absolute;
+  top: 0.73em;
+  border-top: 1px solid #8a7c71;
+}
+.main .sect10 .section-strip h2.no-background span:before {
+  right: 100%;
+}
+.main .sect10 .section-strip h2.no-background span:after {
+  left: 100%;
+}
+.main .sect10 .section10-01 {
+  margin: 5vh auto;
+  text-align: center;
+}
+.main .sect10 .section10-01 h3 {
+  line-height: 2em;
+  font-family: "Klee One", cursive;
+}
+.main .sect10 .section10-01 .pics {
+  width: 75%;
+  margin: 0 auto;
+}
+.main .sect10 .to-link {
+  margin-top: 5vh;
+  text-align: center;
+  padding: 5px 10px;
+}
+.main .sect10 .to-link a {
+  background: #8a7c71;
+  border-radius: 5px;
+  background: linear-gradient(60deg, #8a7c71 0%, #b49f8c 100%);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.5em;
+}
+.main .sect10 .to-link a:hover {
+  text-decoration: underline;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.66);
+  background: #e4e2e0;
+  background: linear-gradient(60deg, #e4e2e0 0%, #dac1a9 100%);
+}
+.main .sect10 .video-area {
+  width: 75%;
+  margin: 0 auto 3vh;
+}
+.main .sect10 .video-area video {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.footer {
+  padding: 3vh 0;
+  background: #1e1e1e;
+  color: #fff;
+}
+.footer .container .links {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  padding-top: 2vh;
+}
+.footer .container .links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .container .links ul li {
+  font-size: 0.8em;
+}
+.footer .container .links ul li a {
+  color: #fff;
+}
 
 @media screen and (max-width: 992px) {
   .main .sect01 .sect01-01 {
@@ -407,6 +581,10 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
   .main .sect02 .sect02-01 .product-info .img {
     margin: 4vh auto;
   }
