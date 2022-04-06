@@ -1,4 +1,5 @@
-$tokio-main: rgb(255,238,206);
+$tokio-main: #FFEBCD;
+$tokio-red: #bb1e1e;
 
 body {
     // font-family: 'PT Serif', serif;
@@ -248,11 +249,44 @@ font-family: 'Shippori Mincho', serif;
 
     .sect02 {
         margin:3vh auto;
+        .section-strip {
+            background: rgb(198,198,198);
+            background: linear-gradient(0deg, #fdde83 0%, #ffecbf 100%);;
+            padding:20px 0;
+            h2.no-background {
+                position: relative;
+                overflow: hidden;
+                font-size:1.25em;
+                font-family: 'Klee One', cursive;
+                span {
+                    display: inline-block;
+                    vertical-align: baseline;
+                    zoom: 1;
+                    *display: inline;
+                    *vertical-align: auto;
+                    position: relative;
+                    padding: 0 20px;
+                    color:#000;
+            
+                    &:before, &:after {
+                        content: '';
+                        display: block;
+                        width: 1000px;
+                        position: absolute;
+                        top: 0.73em;
+                        border-top: 1px solid rgb(138,124,113);;
+                    }
+            
+                    &:before { right: 100%; }
+                    &:after { left: 100%; }
+                }
+            }
+        }
         .sect02-01 {
             margin:4vh auto;
-            h2 {
-                text-align: center;
-            }
+            // h2 {
+            //     text-align: center;
+            // }
             .voices {
                 
                 width:100%;
@@ -300,32 +334,57 @@ font-family: 'Shippori Mincho', serif;
                 margin-left:20px;
                 font-size: 1.5em;
             }
-            h6 {
+            h6.text5 {
                 text-align: center;
                 font-size: 1.5em;
+                line-height: 2em;
+                background:#fff;
+                padding:3vh 0;
+                em {
+                    font-style: normal;
+                    font-size: 1.5em;
+                    color:$tokio-red;
+                }
+                span {
+                    font-size:1.25em;
+                    color:$tokio-red;
+                    font-weight: 800;
+                }
             }
             .product-info {
-                width:96%;
+                width:95%;
+                // max-width:800px
+                // background:#555;;
                 margin:8vh auto;
+                padding:20px;
                 .parts {
                     // width:98%;
                     margin:0 auto;
-                    padding:10px 5px;
+                    // padding:10px 5px;
                     background:#fff;
-                    
-                    border:3px solid rgba(122, 122, 122,0.7);
-                    h5 {
-                        font-size:1em;
-                        margin-left:0;
-                        text-align: center;
-                        padding-bottom:10px;
-                        border-bottom: 1px solid #9a9a9a;
+                    box-shadow: 1px 3px 6px rgba(0,0,0,0.66);
+                    // border:3px solid rgba(122, 122, 122,0.7);
+                    .heading {
+                        background:#737373;
+                        h5 {
+                            font-size:1em;
+                            // margin-left:0;
+                            text-align: center;
+                            padding:15px 0;
+                            color:#fff;
+                            // border-bottom: 1px solid #9a9a9a;
+                        }
                     }
-                    p {
-                        font-size:0.9em;
-                        padding:5px 7px;
+                    .body {
+                        padding:15px 20px;
+                        p {
+                            font-size:0.9em;
+                            // padding:5px 7px;
+                        }
                     }
                 }
+                
+
             }
             
 
@@ -336,6 +395,7 @@ font-family: 'Shippori Mincho', serif;
         height:100%;
         // height:calc(100vh - 62.5px);
         // background:rgb(143, 143, 230);
+        background:#FFEBCD;
         position:relative;
         .sect03-title {
             position: absolute;
@@ -379,13 +439,45 @@ font-family: 'Shippori Mincho', serif;
     }
 
     .sect04 {
-        padding:6vh 0;
-        h2 {
-            text-align:center;
+        padding:0 0 6vh;
+        background:#fff;
+        .section-strip {
+            background: rgb(198,198,198);
+            background: linear-gradient(0deg, #fdde83 0%, #ffecbf 100%);;
+            padding:20px 0;
+            h2.no-background {
+                position: relative;
+                overflow: hidden;
+                font-size:1.25em;
+                font-family: 'Klee One', cursive;
+                span {
+                    display: inline-block;
+                    vertical-align: baseline;
+                    zoom: 1;
+                    *display: inline;
+                    *vertical-align: auto;
+                    position: relative;
+                    padding: 0 20px;
+                    color:#000;
+            
+                    &:before, &:after {
+                        content: '';
+                        display: block;
+                        width: 1000px;
+                        position: absolute;
+                        top: 0.73em;
+                        border-top: 1px solid rgb(138,124,113);;
+                    }
+            
+                    &:before { right: 100%; }
+                    &:after { left: 100%; }
+                }
+            }
         }
         h3 {
             text-align:center;
             line-height: 2em;
+            margin-top:6vh;
         }
         .steps {
             margin:10vh auto;

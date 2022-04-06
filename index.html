@@ -171,7 +171,12 @@
     </section>
     <section class="sect02">
       <div class="sect02-01" id="section02">
-        <h2>{{text1}}</h2>
+        <div class="section-strip">
+          <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1">
+            <h2 class="no-background"><span>{{text1}}</span></h2>
+          </div>
+        </div>
+        
         <div class="voices">
           <div class="row">
             <div class="v-col col-sm-6" v-for="voice in voices">
@@ -208,8 +213,13 @@
             
           
           <h4 v-html="text3"></h4>
-          <hr>
-          <h5 v-html="text4"></h5>
+          
+          <div class="section-strip">
+            <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1">
+              <h2 class="no-background"><span>{{text4}}</span></h2>
+            </div>
+          </div>
+          <!-- <h2><span></span></h2> -->
         <div class="product-info">
           <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-6 img">
@@ -217,17 +227,26 @@
             </div>
             <div class="col-lg-9 col-md-8 col-sm-12 my-auto">
               <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6" v-for="part in parts">
+                <div class="col-lg-6 col-md-6 col-sm-6 mb-3" v-for="part in parts">
                   <div class="parts" style="height:100%;">
-                    <h5>{{part.heading}}</h5>
-                    <p>{{part.body}}</p>
+                    <div class="heading">
+                      <h5>{{part.heading}}</h5>
+                    </div>
+                    <div class="body">
+                      <p>{{part.body}}</p>
+                    </div>
                   </div>
                 </div>
               </div>
+               
+                
+              
             </div>
+
           </div>
         </div>
-        <h6 v-html="text5"></h6>
+        
+        <h6 v-html="text5" class="text5"></h6>
       </div>
     </section>
     <!-- 漫画セクション -->
@@ -311,9 +330,13 @@
     </section>
     <!-- ご自宅での使い方 -->
     <section class="sect04" id="section04">
-
-      <div class="container">
-        <h2>ご自宅での使い方</h2>
+      <div class="section-strip">
+        <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1">
+          <h2 class="no-background"><span>ご自宅での使い方</span></h2>
+        </div>
+      </div>
+      <div class="container-fluid">
+        
         <h3 id="section04-01"></h3>
         <div class="row steps">
           <div class="step-col col-sm-6 col-md-3" v-for="step in steps">
@@ -482,6 +505,7 @@
   <script src="js/jquery.sticky.js"></script>
   <script src="js/main.js"></script>
   <script src="js/app.js"></script>
+  <!-- <script src="js/accordion.js"></script> -->
   <script src="js/index.js"></script>
 
   <script>
@@ -495,6 +519,8 @@
     }
   });
   </script>
+
+
 </body>
 
 </html>
