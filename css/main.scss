@@ -117,6 +117,10 @@ font-family: 'Shippori Mincho', serif;
 //     background-color: #444;
 //   }
 
+.br_on500 {
+    display:none;
+}
+
 .main {
     background:$tokio-main;
     overflow-x: hidden;
@@ -157,6 +161,9 @@ font-family: 'Shippori Mincho', serif;
                     height:100%;
                     background:rgba(0,0,0,0.25);
                     padding:20px;
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
                     p {
                         color:#fff;
                         font-size:1.25em;
@@ -193,6 +200,10 @@ font-family: 'Shippori Mincho', serif;
             }
             h5 {
                 margin-top:3vh;
+                font-size: 1.25em;
+            }
+            h6 {
+                font-size: 2em;
             }
             // padding:3vh 0;
             .points {
@@ -325,10 +336,14 @@ font-family: 'Shippori Mincho', serif;
             h3 {
                 text-align: center;
                 line-height: 2em;
+                margin-top:10vh;
+                margin-bottom:10vh;
             }
-            h4 {
+            h4.bottom {
                 text-align: center;
                 line-height: 2em;
+                // color:red;
+                margin:6vh 0 10vh;
             }
             h5 {
                 margin-left:20px;
@@ -719,6 +734,7 @@ font-family: 'Shippori Mincho', serif;
         h3 {
             line-height: 2em;
             font-family: 'Klee One', cursive;
+            margin:3vh auto 6vh;
         }
         .pics {
             width:75%;
@@ -871,4 +887,89 @@ font-family: 'Shippori Mincho', serif;
     .carousel {
         padding:0;
     }
+}
+
+
+@media screen and (max-width:500px) {
+
+    .br_on500 {
+        display: block;
+    }
+    .main {
+
+        .sect01 {
+            .sect01-top {
+                h3 {
+                    font-size: 1.25em;
+                    // color:red;
+                }
+            }
+            .sect01-02 {
+                h3 {
+                    font-size: 1.5em;
+                }
+                h4 {
+                    font-size:1.5em;
+                }
+            }
+            .sect01-03 {
+                h3 {
+                    font-size:1.25em;
+                    line-height: 2em;
+                }
+                h6 {
+                    font-size: 1.5em;
+                    line-height: 2em;
+                }
+            }
+        }
+        .sect02 {
+            .section-strip {
+                h2.no-background {
+                    span {
+                        font-size: 0.7em;
+
+                    }
+                }
+            }
+            .sect02-01 {
+                h3 {
+                    font-size: 1.25em;
+                }
+                h4.bottom {
+                    font-size: 1.25em;
+                }
+            }
+        }
+        .sect04 {
+            .section-strip {
+                h2.no-background {
+                    span {
+                        font-size: 0.7em;
+
+                    }
+                }
+            }
+            h3 {
+                font-size: 1.5em;
+            } 
+        }
+        // .sect09 {
+        //     .container {
+        //         h4 {
+        //             font-size: 1.25em;
+        //         }
+        //     }
+        // }
+        .sect10 {
+            .section-strip {
+                h2.no-background {
+                    span {
+                        font-size: 0.7em;
+
+                    }
+                }
+            }
+        }
+    } 
 }

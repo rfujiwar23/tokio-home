@@ -99,6 +99,10 @@ body {
   box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.br_on500 {
+  display: none;
+}
+
 .main {
   background: #FFEBCD;
   overflow-x: hidden;
@@ -142,6 +146,9 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.25);
   padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .main .sect01 .sect01-01 .card-image-text .overlay p {
   color: #fff;
@@ -174,6 +181,10 @@ body {
 }
 .main .sect01 .sect01-03 h5 {
   margin-top: 3vh;
+  font-size: 1.25em;
+}
+.main .sect01 .sect01-03 h6 {
+  font-size: 2em;
 }
 .main .sect01 .sect01-03 .points {
   margin: 2vh auto;
@@ -290,10 +301,13 @@ body {
 .main .sect02 .sect02-01 h3 {
   text-align: center;
   line-height: 2em;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
-.main .sect02 .sect02-01 h4 {
+.main .sect02 .sect02-01 h4.bottom {
   text-align: center;
   line-height: 2em;
+  margin: 6vh 0 10vh;
 }
 .main .sect02 .sect02-01 h5 {
   margin-left: 20px;
@@ -625,6 +639,7 @@ body {
 .main .sect10 .section10-01 h3 {
   line-height: 2em;
   font-family: "Klee One", cursive;
+  margin: 3vh auto 6vh;
 }
 .main .sect10 .section10-01 .pics {
   width: 75%;
@@ -734,6 +749,47 @@ body {
 
   .carousel {
     padding: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .br_on500 {
+    display: block;
+  }
+
+  .main .sect01 .sect01-top h3 {
+    font-size: 1.25em;
+  }
+  .main .sect01 .sect01-02 h3 {
+    font-size: 1.5em;
+  }
+  .main .sect01 .sect01-02 h4 {
+    font-size: 1.5em;
+  }
+  .main .sect01 .sect01-03 h3 {
+    font-size: 1.25em;
+    line-height: 2em;
+  }
+  .main .sect01 .sect01-03 h6 {
+    font-size: 1.5em;
+    line-height: 2em;
+  }
+  .main .sect02 .section-strip h2.no-background span {
+    font-size: 0.7em;
+  }
+  .main .sect02 .sect02-01 h3 {
+    font-size: 1.25em;
+  }
+  .main .sect02 .sect02-01 h4.bottom {
+    font-size: 1.25em;
+  }
+  .main .sect04 .section-strip h2.no-background span {
+    font-size: 0.7em;
+  }
+  .main .sect04 h3 {
+    font-size: 1.5em;
+  }
+  .main .sect10 .section-strip h2.no-background span {
+    font-size: 0.7em;
   }
 }
 

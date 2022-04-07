@@ -1,5 +1,3 @@
-<p>
 TOKIOインカラミトリートメントを<br>
-サロンで体感した時と同じ質感艶感へ回復！<br>
-それが”TOKIO HOME”です！
-</p>
+サロンで体感した時と<br class='br_on500'>同じ質感艶感へ回復！<br>
+それが”<span>TOKIO HOME</span>”です！
