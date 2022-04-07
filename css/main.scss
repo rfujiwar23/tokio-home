@@ -970,6 +970,143 @@ font-family: 'Shippori Mincho', serif;
                     }
                 }
             }
+            .section10-01 {
+                .pics {
+                    width:100%;
+                }
+            }
+            .video-area {
+                width:100%;
+            }
+        }
+    } 
+}
+
+@media screen and (max-width:428px) {
+
+    .main {
+
+        .sect01 {
+            .sect01-top {
+                h3 {
+                    font-size: 1.1em;
+                    // color:red;
+                }
+                h4 {
+                    font-size: 1.25em;
+                }
+            }
+            .sect01-02 {
+                h3 {
+                    font-size: 1.25em;
+                }
+                h4 {
+                    font-size:1.25em;
+                }
+            }
+            .sect01-03 {
+                h3 {
+                    font-size:1.25em;
+                    line-height: 2em;
+                }
+                h6 {
+                    font-size: 1.5em;
+                    line-height: 2em;
+                }
+            }
+        }
+        .sect02 {
+            .section-strip {
+                h2.no-background {
+                    span {
+                        font-size: 0.6em;
+
+                    }
+                }
+            }
+            .sect02-01 {
+                h3 {
+                    font-size: 1.25em;
+                }
+                h4.bottom {
+                    font-size: 1.25em;
+                }
+                h6.text5 {
+                    font-size: 1.25em;
+                }
+            }
+        }
+        .sect04 {
+            .section-strip {
+                h2.no-background {
+                    span {
+                        font-size: 0.7em;
+
+                    }
+                }
+            }
+            h3 {
+                font-size: 1.5em;
+            } 
+        }
+    } 
+}
+
+@media screen and (max-width:375px) {
+
+    .main {
+
+        
+        .sect02 {
+            .section-strip {
+                h2.no-background {
+                    span {
+                        font-size: 0.6em;
+
+                    }
+                }
+            }
+            .sect02-01 {
+                h3 {
+                    font-size: 1.05em;
+                }
+                h4.bottom {
+                    font-size: 1.05em;
+                }
+                h6.text5 {
+                    font-size: 1.05em;
+                }
+            }
+        }
+        .sect04 {
+            .section-strip {
+                h2.no-background {
+                    span {
+                        font-size: 0.7em;
+
+                    }
+                }
+            }
+            h3 {
+                font-size: 1.25em;
+            } 
+        }
+        .sect09 {
+            .container {
+                h4 {
+                    font-size: 1.25em;
+                }
+                h3 {
+                    font-size: 1.25em;
+                }
+            }
+        }
+        .sect10 {
+            .section10-01 {
+                h3 {
+                    font-size: 1em;
+                }
+            }
         }
     } 
 }

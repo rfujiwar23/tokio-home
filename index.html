@@ -65,36 +65,6 @@
         </div>
       </div>
     </div>
-
-
-
-    <div class="site-navbar site-navbar-target js-sticky-header">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-2">
-            <h1 class="my-0 site-logo"><a href="index.html"><img src="images/tokio-inkarami-straight.png"
-                  alt="TOKIO INKARAMI" height="30"></a></h1>
-          </div>
-          <div class="col-10">
-            <nav class="site-navigation text-right" role="navigation">
-              <div class="container">
-                <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3" style="float:right;"><a href="#"
-                    class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
-
-                <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
-                  <li class="active"><a href="#home-section" class="nav-link">Home</a></li>
-                  <li><a href="#classes-section" class="nav-link">Sect01</a></li>
-                  <li><a href="#about-section" class="nav-link">Sect02</a></li>
-                  <li><a href="#events-section" class="nav-link">１ヶ月体験</a></li>
-                  <li><a href="#gallery-section" class="nav-link">Sect04</a></li>
-                  <li><a href="#contact-section" class="nav-link">Sect05</a></li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 
 
@@ -155,7 +125,7 @@
           <h3 v-html="message"></h3>
           <div class="row my-5">
 
-            <div v-for="point in threePoints" class="points col-md-4 col-8">
+            <div v-for="point in threePoints" class="points col-md-4 col-10">
               <div class="contents">
                 <h4>{{point.subtitle}}</h4>
                 <h5><span>{{point.subtitle2}}</span></h5>
@@ -172,7 +142,7 @@
     <section class="sect02">
       <div class="sect02-01" id="section02">
         <div class="section-strip">
-          <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1">
+          <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 p-0 m-0">
             <h2 class="no-background"><span>{{text1}}</span></h2>
           </div>
         </div>
@@ -293,37 +263,7 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-        <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-                  <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>   
-            
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="img-box"><img src="https://res.cloudinary.com/rfujiwar23/image/upload/v1645752052/IMG_1546.png" alt="" class=""></div>
-              </div>
-                  <div class="carousel-item">
-                <div class="img-box"><img src="https://res.cloudinary.com/rfujiwar23/image/upload/v1645753010/IMG_1547.png" alt="" class=""></div>
-              </div>
-              <div class="carousel-item">
-                <div class="img-box"><img src="https://res.cloudinary.com/rfujiwar23/image/upload/v1645752155/IMG_1548.png" alt="" class=""></div>
-              </div>
-              <div class="carousel-item">
-                <div class="img-box"><img src="https://res.cloudinary.com/rfujiwar23/image/upload/v1645753043/IMG_1549.png" alt="" class=""></div>
-              </div>
-            </div>
-            
-            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-              <i class="fa fa-angle-left"></i>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-              <i class="fa fa-angle-right"></i>
-            </a>
-          </div> -->
+       
       </div>
 
 
@@ -354,49 +294,7 @@
       <h3 id="section04-03"></h3>
     </section>
 
-    <!-- <section class="sect05" id="section05">
-      <div id="section05-01"></div>
-      <div class="container">
-        <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1">
-          <div class="row section05-manga">
-            <div class="col-6"><img src="images/section05-01.jpg" alt="" class="img-fluid"></div>
-            <div class="col-6 quote">
-              <div class="text">
-                <p>
-                  サロンAとサロンBで同じTOKIOインカラミなのに仕上がりが違う！
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row section05-manga">
-            <div class="col-6 quote">
-              <div class="text">
-                <p>
-                  実は私も前回と今回で持続が違う！やっぱりホームケアも大切
-                </p>
-              </div>
-            </div>
-            <div class="col-6"><img src="images/section05-02.jpg" alt="" class="img-fluid"></div>
-          </div>
-        </div>
-        <h4 id="section05-02"></h4>
-        <h4 id="section05-03"></h4>
-        <h3 class="text-center mb-5">{{topText}}</h3>
-        <div class="row">
-          <div class="col-sm-6" v-for="salon in salonType">
-            <div class="link-to">
-               <div class="text-area">
-                <a :href="salon.link">{{salon.text}}へ</a>
-               </div>
-              <img :src="salon.img" :alt="salon.text">
-            </div>
-          </div>
-        </div>
-        <h4 id="section05-04"></h4>
-      </div>
-
-    </section> -->
-
+   
     <section class="sect09">
 
       <div class="container" id="section09">
@@ -470,7 +368,7 @@
           <a href="https://ifing-beauty.com/">詳しくはこちら</a>
         </div>
 
-        <div class="video-area mt-4 py-2 px-4">
+        <div class="video-area mt-4">
           <div class="embed-responsive embed-responsive-16by9">
             <video controls controlsList="nodownload" autoplay muted loop
               src="images/video/ocean-tokyo-takagi.mp4"></video>
