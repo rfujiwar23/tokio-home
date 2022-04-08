@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: "Shippori Mincho", serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .col-center {
@@ -41,7 +41,7 @@ body {
 }
 .carousel .overview b {
   text-transform: uppercase;
-  color: #7AA641;
+  color: #7aa641;
 }
 
 .carousel-control-prev {
@@ -104,7 +104,7 @@ body {
 }
 
 .main {
-  background: #FFEBCD;
+  background: #ffebcd;
   overflow-x: hidden;
 }
 .main .sect01 {
@@ -116,7 +116,8 @@ body {
 }
 .main .sect01 .sect01-top h3 {
   line-height: 2em;
-  font-size: 1.5em;
+  font-size: 2em;
+  font-weight: 800;
 }
 .main .sect01 .sect01-top h4 {
   font-size: 2em;
@@ -127,6 +128,30 @@ body {
 .main .sect01 .sect01-01 {
   width: 85%;
   margin: 0 auto;
+}
+.main .sect01 .sect01-01 .points .inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.main .sect01 .sect01-01 .points .inner .text-top,
+.main .sect01 .sect01-01 .points .inner .text-bottom {
+  width: 100%;
+}
+.main .sect01 .sect01-01 .points .inner .text-top {
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 999;
+}
+.main .sect01 .sect01-01 .points .inner .text-top h4 {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #737373;
+}
+.main .sect01 .sect01-01 .points .circle {
+  border-radius: 50%;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.33);
+  border: 2px solid #fff;
 }
 .main .sect01 .sect01-01 .card-header {
   padding: 5px 10px;
@@ -157,6 +182,9 @@ body {
 }
 .main .sect01 .sect01-02 {
   margin: 4vh auto;
+  padding: 3vh 0;
+  background: #fff;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
 }
 .main .sect01 .sect01-02 h3 {
   margin-top: 3vh;
@@ -174,7 +202,7 @@ body {
   margin: 4vh auto;
   width: 100%;
   max-width: 900px;
-  padding-top: calc(515/900);
+  padding-top: calc(515 / 900);
 }
 .main .sect01 .sect01-03 h3 {
   line-height: 1.5em;
@@ -193,6 +221,7 @@ body {
   background: #e0e0e0;
   background: linear-gradient(180deg, #e0e0e0 0%, #fcfcfc 54%);
   border: 1px solid #555;
+  border-radius: 50%;
   padding: 10px;
   height: 100%;
 }
@@ -225,6 +254,56 @@ body {
   padding: 20px 5px;
   font-weight: normal;
   text-align: left;
+}
+.main .sect01 .sect01-03 .points .circle {
+  position: relative;
+  display: block;
+  margin: 2em 0;
+  background-color: transparent;
+  color: #222;
+  text-align: center;
+}
+.main .sect01 .sect01-03 .points .circle:after {
+  display: block;
+  padding-bottom: 100%;
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: rgba(255, 242, 169, 0.77);
+  border: 2px solid white;
+  content: "";
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.33);
+}
+.main .sect01 .sect01-03 .points .circle__inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main .sect01 .sect01-03 .points .circle__wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.main .sect01 .sect01-03 .points .circle__content {
+  display: table-cell;
+  padding: 1em;
+  vertical-align: middle;
+}
+.main .sect01 .sect01-03 .points .circle__content h4 {
+  font-size: 1em;
+}
+.main .sect01 .sect01-03 .points .circle__content h5.circleh5 {
+  font-size: 1.25em;
+  margin-top: 10px;
+  font-weight: 800;
+}
+.main .sect01 .sect01-03 .bg {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%), url("../images/tokio-home.jpg") no-repeat;
+  background-position: center bottom;
+  background-size: cover;
 }
 .main .sect02 {
   margin: 3vh auto;
@@ -355,9 +434,55 @@ body {
 .main .sect02 .sect02-01 .product-info .parts .body p {
   font-size: 0.9em;
 }
+.main .sect02 .sect02-01 .product-info .circle {
+  position: relative;
+  display: block;
+  margin: 2em 0;
+  background-color: transparent;
+  color: #222;
+  text-align: center;
+}
+.main .sect02 .sect02-01 .product-info .circle:after {
+  display: block;
+  padding-bottom: 100%;
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: rgba(255, 242, 169, 0.77);
+  border: 2px solid white;
+  content: "";
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.33);
+}
+.main .sect02 .sect02-01 .product-info .circle__inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main .sect02 .sect02-01 .product-info .circle__wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.main .sect02 .sect02-01 .product-info .circle__content {
+  display: table-cell;
+  padding: 1em;
+  vertical-align: middle;
+}
+.main .sect02 .sect02-01 .product-info .circle__content p {
+  font-size: 0.75em;
+}
+.main .sect02 .sect02-01 .product-info .circle__content h5 {
+  font-size: 0.9em;
+  font-weight: 800;
+  margin: 0;
+  margin-bottom: 10px;
+}
 .main .sect03 {
   height: 100%;
-  background: #FFEBCD;
+  background: #ffebcd;
   position: relative;
 }
 .main .sect03 .sect03-title {
@@ -434,23 +559,33 @@ body {
 }
 .main .sect04 .steps {
   margin: 10vh auto;
+  width: 100%;
+  max-width: 560px;
+  padding: 20px 10px;
 }
-.main .sect04 .steps .step-col {
-  margin-bottom: 20px;
+.main .sect04 .steps .inner {
+  display: flex;
+  align-items: center;
 }
-.main .sect04 .steps .step-col .img {
-  border: 1px solid #000;
+.main .sect04 .steps .inner .text-area .text-top {
+  border-bottom: 1px solid #8a7c71;
 }
-.main .sect04 .steps .step-col .text {
-  margin-top: 2vh;
-  padding: 10px;
-  border: 1px solid #202020;
+.main .sect04 .steps .inner .text-area .text-top h5 {
+  font-size: 1.25em;
+  position: relative;
 }
-.main .sect04 .steps .step-col .text h6 {
-  margin-left: 5px;
+.main .sect04 .steps .inner .text-area .text-top h5 span {
+  color: rgba(178, 178, 178, 0.6);
+  font-size: 2.5em;
 }
-.main .sect04 .steps .step-col .text p {
-  color: #202020;
+.main .sect04 .steps .inner .text-area .text-top h5 em {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  font-size: 0.2em;
+}
+.main .sect04 .steps img {
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.66);
 }
 .main .sect05 #section05-01 {
   text-align: center;
@@ -794,6 +929,9 @@ body {
   .main .sect10 .section10-01 .pics {
     width: 100%;
   }
+  .main .sect10 .section10-01 h3 {
+    font-size: 1.25em;
+  }
   .main .sect10 .video-area {
     width: 100%;
   }
@@ -836,6 +974,14 @@ body {
   }
   .main .sect04 h3 {
     font-size: 1.5em;
+  }
+  .main .sect10 .section10-01 h3 {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main .sect10 .section10-01 h3 {
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 375px) {

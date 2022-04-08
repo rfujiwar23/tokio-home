@@ -1,5 +1,7 @@
 // const { default: Vue } = require("vue");
 
+
+
 var vm = new Vue({
   el: "#section01",
   data: {
@@ -22,6 +24,7 @@ var vm = new Vue({
         text: "活性酵素を除去する高い抗酸化力をもち、持続性にも優れた成分。紫外線など日々の避けられないダメージから髪を守ります。",
       },
     ],
+    
     message2: "強く、美しく、しなやかに、<br class='br_on500'>髪がよみがえる実感。",
   },
 });
@@ -89,25 +92,25 @@ var vm = new Vue({
         steps: [
         {
             id:1,
-            img: 'images/tkh.png',
+            img: 'images/tokio-home_001.png',
             body: 'シャンプー後に水分をしっかり切る',
             alt: "シャンプー後に",
         },
         {
             id:2,
-            img: 'images/tkh.png',
+            img: 'images/tokio-home_002.png',
             body: '手のひらに3センチ程スライム状のHOMEを出してから',
             alt: "TOKIO HOMEを手に",
         },
         {
             id:3,
-            img: 'images/tkh.png',
+            img: 'images/tokio-home_003.png',
             body: 'クリームになるまで手のひらでしっかり伸ばします',
             alt: "TOKIO HOMEをクリーム状に",
         },
         {
             id:4,
-            img: 'images/tkh.png',
+            img: 'images/tokio-home_004.png',
             body: '中間から毛先中心に馴染ませて5分ほど放置して流します',
             alt: "TOKIO HOMEを放置",
         },
