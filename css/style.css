@@ -61,14 +61,6 @@ a:hover {
   text-decoration: none !important;
 }
 
-.hero {
-  height: 100vh;
-  /* padding-top:56.25%; */
-  width: 100%;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
 
 .site-navbar-wrap {
   position: absolute;

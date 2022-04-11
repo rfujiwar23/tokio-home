@@ -11,6 +11,32 @@ body {
     float: none !important;
 }
 
+.jumbotron {
+    padding-top:56.75%;
+    background: rgb(109,99,94);
+    // padding-bottom:0;
+    position:relative;
+    margin-bottom:0;
+    .inner {
+        position:absolute;
+        transform: translate(-50%,-50%);
+        top:50%;
+        left:50%;
+        width:43.75%;
+        height:100%;
+        // background:#7aa641;
+        // margin:0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+
+        }
+        
+
+    }
+}
+
 // #mangaCarousel {
 //     height:100vh;
 //     width:100%;
@@ -215,6 +241,7 @@ body {
             margin: 4vh auto;
             padding: 3vh 0;
             background: #fff;
+            color:#bb1e1e;
             font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
             h3 {
                 margin-top: 3vh;
@@ -289,7 +316,8 @@ body {
                     p {
                         // background:#fdde83;
                         // height:100%;
-                        padding: 20px 5px;
+                        padding: 5px 5px;
+                        font-size: 0.8em;
                         font-weight: normal;
                         text-align: left;
                     }
@@ -298,6 +326,7 @@ body {
                     position: relative;
                     display: block;
                     margin: 2em 0;
+                    font-size: 0.8em;
                     background-color: transparent;
                     color: #222;
                     text-align: center;
@@ -647,7 +676,7 @@ body {
             margin-top: 6vh;
         }
         .steps {
-            margin: 10vh auto;
+            margin: 4vh auto;
             width: 100%;
             max-width: 560px;
             // background:#4f4f4f;
@@ -804,6 +833,42 @@ body {
                             margin-bottom: 0;
                             font-family: "Klee One", cursive;
                         }
+                    }
+                    .left.text::after {
+                        border-left-color: #a53d38;
+                        border-right: 0;
+                        left: -20px;
+                        top: 50%;
+                        margin-top: -20px;
+                    }
+                    .speech {
+                        font-family: arial, sans-serif;
+                        font-size: 0.9em;
+                        color: #fff;
+                        background: rgba(122, 122, 122, 0.7);
+                        position: relative;
+                        padding: 20px;
+                        border-radius: 10px;
+                        max-width: 320px;
+                    }
+                    .speech::after {
+                        content: "";
+                        border: 20px solid transparent;
+                        position: absolute;
+                    }
+                    .left.speech::after {
+                        border-right-color: rgba(122, 122, 122, 0.7);
+                        border-left: 0;
+                        left: -20px;
+                        top: 50%;
+                        margin-top: -20px;
+                    }
+                    .right.speech::after {
+                        border-left-color: rgba(122, 122, 122, 0.7);
+                        border-right: 0;
+                        right: -20px;
+                        top: 50%;
+                        margin-top: -20px;
                     }
                 }
             }
@@ -1041,6 +1106,15 @@ body {
     }
 }
 
+@media screen and (max-width: 576px) {
+    .jumbotron {
+        padding-top: 100%;
+        .inner {
+            width:66%;
+        }
+    }
+}
+
 @media screen and (max-width: 500px) {
     .br_on500 {
         display: block;
@@ -1191,7 +1265,7 @@ body {
                 }
             }
             h3 {
-                font-size: 1.5em;
+                font-size: 1.25em;
             }
         }
         .sect10 {
@@ -1202,6 +1276,53 @@ body {
             }
         }
     }
+}
+
+@media screen and (max-width: 414px) {
+
+    .main {
+        .sect01 {
+            .sect01-01 {
+                .points {
+                    .inner {
+                        .text-top {
+                            h4 {
+                                font-size: 1.1em;
+                            }
+                        }
+                        .text-bottom {
+                            p {
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .sect04 {
+            .steps {
+                .inner {
+                    .text-area {
+                        .text-top {
+                            h5 {
+                                font-size: 0.9em;
+                                span {
+                                    font-size: 2em;
+                                }
+                            }
+                        }
+                        .text-bottom {
+                            p {
+                                font-size: 0.8em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
 }
 
 @media screen and (max-width: 400px) {
@@ -1218,6 +1339,24 @@ body {
 
 @media screen and (max-width: 375px) {
     .main {
+        .sect01 {
+            .sect01-01 {
+                .points {
+                    .inner {
+                        .text-top {
+                            h4 {
+                                font-size: 0.9em;
+                            }
+                        }
+                        .text-bottom {
+                            p {
+                                font-size: 0.8em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .sect02 {
             .section-strip {
                 h2.no-background {

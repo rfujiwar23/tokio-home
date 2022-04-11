@@ -41,47 +41,21 @@
 
 <body>
 
-
-    <div class="site-mobile-menu site-navbar-target">
-        <div class="site-mobile-menu-header">
-            <div class="site-mobile-menu-close mt-3">
-                <span class="icon-close2 js-menu-toggle"></span>
-            </div>
-        </div>
-        <div class="site-mobile-menu-body"></div>
-    </div> <!-- .site-mobile-menu -->
+    <nav class="navbar navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">
+          <img src="images/ifing-beauty-logo.svg"  height="30" alt="IFING BEAUTY TOKIO HOME">
+        </a>
+      </nav>
 
 
-    <div class="site-navbar-wrap">
-        <div class="site-navbar-top">
-            <div class="container py-3">
-                <div class="row align-items-center">
-                    <div class="col-6">
-                        <div class="d-flex mr-auto">
-                            <img src="images/ifing-beauty-logo.svg" alt="IFING BEAUTY" height="30">
-                        </div>
-                    </div>
-                    <div class="col-6" style="text-align: right;">
-                        <div class="mr-auto">
-                            <!-- <a href="#" class="p-2 pl-0"><span class="icon-twitter"></span></a> -->
-                            <!-- <a href="#" class="p-2 pl-0"><span class="icon-facebook"></span></a> -->
-                            <a href="https://ifing-beauty.com/contact" class="p-2 pl-0"><span
-                                    class="icon-envelope"></span></a>
-                            <!-- <a href="#" class="p-2 pl-0"><span class="icon-linkedin"></span></a> -->
-                            <a href="https://www.instagram.com/ifing_beauty/" class="p-2 pl-0"><span
-                                    class="icon-instagram"></span></a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+    <div class="jumbotron">
+        <div class="inner">
+            <img src="images/tokio-home.png" alt="TOKIO HOME" class="img-fluid">
         </div>
     </div>
 
 
-    <div class="hero"
-        style="background-image: url('images/tokio-home.png'); background-position: center; background-size: cover;">
-    </div>
+    
 
     <div class="main">
         <section class="sect01">
@@ -255,9 +229,9 @@
                         <div class="col-lg-3 col-md-4 col-sm-6 img">
                             <img src="images/tokio-inkarami-home.png" alt="tokio inkarami home" class="img-fluid">
                         </div>
-                        <div class="col-lg-10 offset-lg-1 col-md-8 offset-md-2 col-sm-10 offset-sm-1 my-auto">
+                        <div class="col-lg-10 offset-lg-1 col-md-8 offset-md-2 col-sm-10 offset-sm-1 my-auto p-0">
                             <div class="row">
-                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 mb-3" v-for="part in parts">
+                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 mb-3 p-0" v-for="part in parts">
                                     <!-- <div class="parts" style="height:100%;"> -->
                                         
                                         <div class="circle">
@@ -340,13 +314,13 @@
                     <h2 class="no-background"><span>ご自宅での使い方</span></h2>
                 </div>
             </div>
-            <div class="container-fluid">
+            <div class="container-fluid p-0">
 
                 <h3 id="section04-01"></h3>
                 <!-- <div class="row steps"> -->
                     <div class="steps row mb-5" v-for="step in steps">
                         
-                        <div class="inner col-8">
+                        <div class="inner col-sm-8 col-9">
                             
                             <div class="text-area">
                                 <div class="text-top">
@@ -358,7 +332,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 px-0">
+                        <div class="col-sm-4 col-3 px-0">
                             <img :src="step.img" :alt="step.alt" class="img-fluid" style="border-radius: 50%;">
                         </div>
                     </div>
@@ -376,19 +350,28 @@
                     <div class="row section05-manga">
                         <div class="col-6"><img src="images/section05-01.jpg" alt="" class="img-fluid"></div>
                         <div class="col-6 quote">
-                            <div class="text">
+                            <!-- <div class="text left">
                                 <p>
                                     TOKIOトリートメントやってるお店はたくさんあるけど、
                                 </p>
+                            </div> -->
+                            <div class="speech left">
+                                TOKIOトリートメントやってるお店はたくさんあるけど、
                             </div>
                         </div>
                     </div>
                     <div class="row section05-manga">
                         <div class="col-6 quote">
-                            <div class="text">
+                            <!-- <div class="text">
                                 <p>
                                     実は私も前回と今回で持続が違う！やっぱりホームケアも大切
                                 </p>
+                            </div> -->
+                            <!-- <div class="speech left">
+                                TOKIOトリートメントやってるお店はたくさんあるけど、
+                            </div> -->
+                            <div class="speech right">
+                                実は私も前回と今回で持続が違う！やっぱりホームケアも大切
                             </div>
                         </div>
                         <div class="col-6"><img src="images/section05-02.jpg" alt="" class="img-fluid"></div>
