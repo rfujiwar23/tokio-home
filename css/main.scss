@@ -12,28 +12,25 @@ body {
 }
 
 .jumbotron {
-    padding-top:56.75%;
-    background: rgb(109,99,94);
+    padding-top: 56.75%;
+    background: rgb(109, 99, 94);
     // padding-bottom:0;
-    position:relative;
-    margin-bottom:0;
+    position: relative;
+    margin-bottom: 0;
     .inner {
-        position:absolute;
-        transform: translate(-50%,-50%);
-        top:50%;
-        left:50%;
-        width:43.75%;
-        height:100%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        width: 43.75%;
+        height: 100%;
         // background:#7aa641;
         // margin:0 auto;
         display: flex;
         align-items: center;
         justify-content: center;
         img {
-
         }
-        
-
     }
 }
 
@@ -241,7 +238,7 @@ body {
             margin: 4vh auto;
             padding: 3vh 0;
             background: #fff;
-            color:#bb1e1e;
+            color: #bb1e1e;
             font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
             h3 {
                 margin-top: 3vh;
@@ -384,49 +381,25 @@ body {
 
     .sect02 {
         margin: 3vh auto;
-        .section-strip {
-            background: rgb(198, 198, 198);
-            background: linear-gradient(0deg, #fdde83 0%, #ffecbf 100%);
-            padding: 20px 0;
-            h2.no-background {
-                position: relative;
-                overflow: hidden;
-                font-size: 1.25em;
-                font-family: "Klee One", cursive;
-                span {
-                    display: inline-block;
-                    vertical-align: baseline;
-                    zoom: 1;
-                    *display: inline;
-                    *vertical-align: auto;
-                    position: relative;
-                    padding: 0 20px;
-                    color: #000;
-
-                    &:before,
-                    &:after {
-                        content: "";
-                        display: block;
-                        width: 1000px;
-                        position: absolute;
-                        top: 0.73em;
-                        border-top: 1px solid rgb(138, 124, 113);
-                    }
-
-                    &:before {
-                        right: 100%;
-                    }
-                    &:after {
-                        left: 100%;
-                    }
-                }
-            }
-        }
         .sect02-01 {
             margin: 4vh auto;
             // h2 {
             //     text-align: center;
             // }
+            .section-title {
+                background: rgb(250, 240, 184);
+                background: linear-gradient(180deg, rgba(250, 240, 184, 1) 0%, rgba(255, 233, 108, 1) 100%);
+                text-align: center;
+                padding: 20px 0;
+                h2 {
+                    color: rgb(18, 5, 37);
+                    font-size: 1.25em;
+                    line-height:2em;
+                    span {
+                        border-bottom: 1px solid rgb(18, 5, 37);
+                    }
+                }
+            }
             .voices {
                 width: 100%;
                 max-width: 800px;
@@ -525,7 +498,6 @@ body {
                             // padding:5px 7px;
                         }
                     }
-                   
                 }
                 .circle {
                     position: relative;
@@ -574,8 +546,8 @@ body {
                         font-size: 0.9em;
                         // margin-top: 10px;
                         font-weight: 800;
-                        margin:0;
-                        margin-bottom:10px;
+                        margin: 0;
+                        margin-bottom: 10px;
                     }
                 }
             }
@@ -632,48 +604,24 @@ body {
     .sect04 {
         padding: 0 0 6vh;
         background: #fff;
-        .section-strip {
-            background: rgb(198, 198, 198);
-            background: linear-gradient(0deg, #fdde83 0%, #ffecbf 100%);
-            padding: 20px 0;
-            h2.no-background {
-                position: relative;
-                overflow: hidden;
-                font-size: 1.25em;
-                font-family: "Klee One", cursive;
-                span {
-                    display: inline-block;
-                    vertical-align: baseline;
-                    zoom: 1;
-                    *display: inline;
-                    *vertical-align: auto;
-                    position: relative;
-                    padding: 0 20px;
-                    color: #000;
-
-                    &:before,
-                    &:after {
-                        content: "";
-                        display: block;
-                        width: 1000px;
-                        position: absolute;
-                        top: 0.73em;
-                        border-top: 1px solid rgb(138, 124, 113);
-                    }
-
-                    &:before {
-                        right: 100%;
-                    }
-                    &:after {
-                        left: 100%;
-                    }
-                }
-            }
-        }
         h3 {
             text-align: center;
             line-height: 2em;
             margin-top: 6vh;
+        }
+        .section-title {
+            background: rgb(250, 240, 184);
+            background: linear-gradient(180deg, rgba(250, 240, 184, 1) 0%, rgba(255, 233, 108, 1) 100%);
+            text-align: center;
+            padding: 20px 0;
+            h2 {
+                color: rgb(18, 5, 37);
+                font-size: 1.25em;
+                line-height:2em;
+                span {
+                    border-bottom: 1px solid rgb(18, 5, 37);
+                }
+            }
         }
         .steps {
             margin: 4vh auto;
@@ -913,41 +861,17 @@ body {
 
     .sect10 {
         // background:$limited-light;
-        .section-strip {
-            background: rgb(198, 198, 198);
-            background: linear-gradient(0deg, #fdde83 0%, #ffecbf 100%);
+        .section-title {
+            background: rgb(250, 240, 184);
+            background: linear-gradient(180deg, rgba(250, 240, 184, 1) 0%, rgba(255, 233, 108, 1) 100%);
+            text-align: center;
             padding: 20px 0;
-            h2.no-background {
-                position: relative;
-                overflow: hidden;
+            h2 {
+                color: rgb(18, 5, 37);
                 font-size: 1.25em;
-                font-family: "Klee One", cursive;
+                line-height:2em;
                 span {
-                    display: inline-block;
-                    vertical-align: baseline;
-                    zoom: 1;
-                    *display: inline;
-                    *vertical-align: auto;
-                    position: relative;
-                    padding: 0 20px;
-                    color: #000;
-
-                    &:before,
-                    &:after {
-                        content: "";
-                        display: block;
-                        width: 1000px;
-                        position: absolute;
-                        top: 0.73em;
-                        border-top: 1px solid rgb(138, 124, 113);
-                    }
-
-                    &:before {
-                        right: 100%;
-                    }
-                    &:after {
-                        left: 100%;
-                    }
+                    border-bottom: 1px solid rgb(18, 5, 37);
                 }
             }
         }
@@ -1110,7 +1034,7 @@ body {
     .jumbotron {
         padding-top: 100%;
         .inner {
-            width:66%;
+            width: 66%;
         }
     }
 }
@@ -1119,6 +1043,7 @@ body {
     .br_on500 {
         display: block;
     }
+    
     .main {
         .sect01 {
             .sect01-top {
@@ -1147,13 +1072,6 @@ body {
             }
         }
         .sect02 {
-            .section-strip {
-                h2.no-background {
-                    span {
-                        font-size: 0.7em;
-                    }
-                }
-            }
             .sect02-01 {
                 h3 {
                     font-size: 1.25em;
@@ -1164,13 +1082,6 @@ body {
             }
         }
         .sect04 {
-            .section-strip {
-                h2.no-background {
-                    span {
-                        font-size: 0.7em;
-                    }
-                }
-            }
             h3 {
                 font-size: 1.5em;
             }
@@ -1183,13 +1094,6 @@ body {
         //     }
         // }
         .sect10 {
-            .section-strip {
-                h2.no-background {
-                    span {
-                        font-size: 0.7em;
-                    }
-                }
-            }
             .section10-01 {
                 .pics {
                     width: 100%;
@@ -1237,13 +1141,6 @@ body {
             }
         }
         .sect02 {
-            .section-strip {
-                h2.no-background {
-                    span {
-                        font-size: 0.6em;
-                    }
-                }
-            }
             .sect02-01 {
                 h3 {
                     font-size: 1.25em;
@@ -1257,13 +1154,6 @@ body {
             }
         }
         .sect04 {
-            .section-strip {
-                h2.no-background {
-                    span {
-                        font-size: 0.7em;
-                    }
-                }
-            }
             h3 {
                 font-size: 1.25em;
             }
@@ -1279,7 +1169,6 @@ body {
 }
 
 @media screen and (max-width: 414px) {
-
     .main {
         .sect01 {
             .sect01-01 {
@@ -1321,8 +1210,6 @@ body {
             }
         }
     }
-
-    
 }
 
 @media screen and (max-width: 400px) {
@@ -1358,13 +1245,6 @@ body {
             }
         }
         .sect02 {
-            .section-strip {
-                h2.no-background {
-                    span {
-                        font-size: 0.6em;
-                    }
-                }
-            }
             .sect02-01 {
                 h3 {
                     font-size: 1.05em;
@@ -1378,13 +1258,6 @@ body {
             }
         }
         .sect04 {
-            .section-strip {
-                h2.no-background {
-                    span {
-                        font-size: 0.7em;
-                    }
-                }
-            }
             h3 {
                 font-size: 1.25em;
             }

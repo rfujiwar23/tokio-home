@@ -328,43 +328,22 @@ body {
 .main .sect02 {
   margin: 3vh auto;
 }
-.main .sect02 .section-strip {
-  background: #c6c6c6;
-  background: linear-gradient(0deg, #fdde83 0%, #ffecbf 100%);
-  padding: 20px 0;
-}
-.main .sect02 .section-strip h2.no-background {
-  position: relative;
-  overflow: hidden;
-  font-size: 1.25em;
-  font-family: "Klee One", cursive;
-}
-.main .sect02 .section-strip h2.no-background span {
-  display: inline-block;
-  vertical-align: baseline;
-  zoom: 1;
-  *display: inline;
-  *vertical-align: auto;
-  position: relative;
-  padding: 0 20px;
-  color: #000;
-}
-.main .sect02 .section-strip h2.no-background span:before, .main .sect02 .section-strip h2.no-background span:after {
-  content: "";
-  display: block;
-  width: 1000px;
-  position: absolute;
-  top: 0.73em;
-  border-top: 1px solid #8a7c71;
-}
-.main .sect02 .section-strip h2.no-background span:before {
-  right: 100%;
-}
-.main .sect02 .section-strip h2.no-background span:after {
-  left: 100%;
-}
 .main .sect02 .sect02-01 {
   margin: 4vh auto;
+}
+.main .sect02 .sect02-01 .section-title {
+  background: #faf0b8;
+  background: linear-gradient(180deg, #faf0b8 0%, #ffe96c 100%);
+  text-align: center;
+  padding: 20px 0;
+}
+.main .sect02 .sect02-01 .section-title h2 {
+  color: #120525;
+  font-size: 1.25em;
+  line-height: 2em;
+}
+.main .sect02 .sect02-01 .section-title h2 span {
+  border-bottom: 1px solid #120525;
 }
 .main .sect02 .sect02-01 .voices {
   width: 100%;
@@ -537,45 +516,24 @@ body {
   padding: 0 0 6vh;
   background: #fff;
 }
-.main .sect04 .section-strip {
-  background: #c6c6c6;
-  background: linear-gradient(0deg, #fdde83 0%, #ffecbf 100%);
-  padding: 20px 0;
-}
-.main .sect04 .section-strip h2.no-background {
-  position: relative;
-  overflow: hidden;
-  font-size: 1.25em;
-  font-family: "Klee One", cursive;
-}
-.main .sect04 .section-strip h2.no-background span {
-  display: inline-block;
-  vertical-align: baseline;
-  zoom: 1;
-  *display: inline;
-  *vertical-align: auto;
-  position: relative;
-  padding: 0 20px;
-  color: #000;
-}
-.main .sect04 .section-strip h2.no-background span:before, .main .sect04 .section-strip h2.no-background span:after {
-  content: "";
-  display: block;
-  width: 1000px;
-  position: absolute;
-  top: 0.73em;
-  border-top: 1px solid #8a7c71;
-}
-.main .sect04 .section-strip h2.no-background span:before {
-  right: 100%;
-}
-.main .sect04 .section-strip h2.no-background span:after {
-  left: 100%;
-}
 .main .sect04 h3 {
   text-align: center;
   line-height: 2em;
   margin-top: 6vh;
+}
+.main .sect04 .section-title {
+  background: #faf0b8;
+  background: linear-gradient(180deg, #faf0b8 0%, #ffe96c 100%);
+  text-align: center;
+  padding: 20px 0;
+}
+.main .sect04 .section-title h2 {
+  color: #120525;
+  font-size: 1.25em;
+  line-height: 2em;
+}
+.main .sect04 .section-title h2 span {
+  border-bottom: 1px solid #120525;
 }
 .main .sect04 .steps {
   margin: 4vh auto;
@@ -788,40 +746,19 @@ body {
 .main .sect09 .container .reserve {
   margin: 8vh auto;
 }
-.main .sect10 .section-strip {
-  background: #c6c6c6;
-  background: linear-gradient(0deg, #fdde83 0%, #ffecbf 100%);
+.main .sect10 .section-title {
+  background: #faf0b8;
+  background: linear-gradient(180deg, #faf0b8 0%, #ffe96c 100%);
+  text-align: center;
   padding: 20px 0;
 }
-.main .sect10 .section-strip h2.no-background {
-  position: relative;
-  overflow: hidden;
+.main .sect10 .section-title h2 {
+  color: #120525;
   font-size: 1.25em;
-  font-family: "Klee One", cursive;
+  line-height: 2em;
 }
-.main .sect10 .section-strip h2.no-background span {
-  display: inline-block;
-  vertical-align: baseline;
-  zoom: 1;
-  *display: inline;
-  *vertical-align: auto;
-  position: relative;
-  padding: 0 20px;
-  color: #000;
-}
-.main .sect10 .section-strip h2.no-background span:before, .main .sect10 .section-strip h2.no-background span:after {
-  content: "";
-  display: block;
-  width: 1000px;
-  position: absolute;
-  top: 0.73em;
-  border-top: 1px solid #8a7c71;
-}
-.main .sect10 .section-strip h2.no-background span:before {
-  right: 100%;
-}
-.main .sect10 .section-strip h2.no-background span:after {
-  left: 100%;
+.main .sect10 .section-title h2 span {
+  border-bottom: 1px solid #120525;
 }
 .main .sect10 .section10-01 {
   margin: 5vh auto;
@@ -972,23 +909,14 @@ body {
     font-size: 1.5em;
     line-height: 2em;
   }
-  .main .sect02 .section-strip h2.no-background span {
-    font-size: 0.7em;
-  }
   .main .sect02 .sect02-01 h3 {
     font-size: 1.25em;
   }
   .main .sect02 .sect02-01 h4.bottom {
     font-size: 1.25em;
   }
-  .main .sect04 .section-strip h2.no-background span {
-    font-size: 0.7em;
-  }
   .main .sect04 h3 {
     font-size: 1.5em;
-  }
-  .main .sect10 .section-strip h2.no-background span {
-    font-size: 0.7em;
   }
   .main .sect10 .section10-01 .pics {
     width: 100%;
@@ -1021,9 +949,6 @@ body {
     font-size: 1.5em;
     line-height: 2em;
   }
-  .main .sect02 .section-strip h2.no-background span {
-    font-size: 0.6em;
-  }
   .main .sect02 .sect02-01 h3 {
     font-size: 1.25em;
   }
@@ -1032,9 +957,6 @@ body {
   }
   .main .sect02 .sect02-01 h6.text5 {
     font-size: 1.25em;
-  }
-  .main .sect04 .section-strip h2.no-background span {
-    font-size: 0.7em;
   }
   .main .sect04 h3 {
     font-size: 1.25em;
@@ -1072,9 +994,6 @@ body {
   .main .sect01 .sect01-01 .points .inner .text-bottom p {
     font-size: 0.8em;
   }
-  .main .sect02 .section-strip h2.no-background span {
-    font-size: 0.6em;
-  }
   .main .sect02 .sect02-01 h3 {
     font-size: 1.05em;
   }
@@ -1083,9 +1002,6 @@ body {
   }
   .main .sect02 .sect02-01 h6.text5 {
     font-size: 1.05em;
-  }
-  .main .sect04 .section-strip h2.no-background span {
-    font-size: 0.7em;
   }
   .main .sect04 h3 {
     font-size: 1.25em;

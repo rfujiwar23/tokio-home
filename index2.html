@@ -137,7 +137,9 @@
             <div class="sect01-02">
                 <h3>カリスマ美容師・カミカリスマサロン<br class="br_on500">支持率No.1</h3>
                 <h4>TOKIOインカラミトリートメント</h4>
-                <h4><span><i class="fa-solid fa-down-long"></i></span></h4>
+                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 mt-3">
+                    <img src="images/img-002.png" alt="TOKIO INKARAMI" class="img-fluid">
+                </div>
             </div>
             <div class="sect01-03">
                 <div class="product-list" id="section01">
@@ -173,15 +175,14 @@
         </section>
         <section class="sect02">
             <div class="sect02-01" id="section02">
-                <div class="section-strip">
-                    <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 p-0 m-0">
-                        <h2 class="no-background"><span>{{text1}}</span></h2>
-                    </div>
+                <div class="section-title">
+                    <h2><span v-html="text1"></span></h2>
                 </div>
+                
 
                 <div class="voices">
                     <div class="row">
-                        <div class="v-col col-sm-6" v-for="voice in voices">
+                        <div class="v-col col-sm-6 mb-4" v-for="voice in voices">
                             <div class="content">
                                 <div class="top">
                                     <h4>{{voice.heading}}</h4>
@@ -217,16 +218,14 @@
                 <h4 class="bottom" v-html="text3"></h4>
 
                 <!-- <h2 class="no-background"><span>{{text4}}</span></h2> -->
-
-                <div class="section-strip">
-                    <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1">
-                        <h2 class="no-background"><span v-html="text4"></span></h2>
-                    </div>
-                </div>
+               <div class="section-title">
+                <h2 class="no-background"><span v-html="text4"></span></h2>
+               </div>
+                
                 <!-- <h2><span></span></h2> -->
                 <div class="product-info">
                     <div class="row">
-                        <div class="col-lg-3 col-md-4 col-sm-6 img">
+                        <div class="col-lg-4 offset-lg-4 col-md-4 offset-md-4 col-sm-6 offset-sm-3 img">
                             <img src="images/tokio-inkarami-home.png" alt="tokio inkarami home" class="img-fluid">
                         </div>
                         <div class="col-lg-10 offset-lg-1 col-md-8 offset-md-2 col-sm-10 offset-sm-1 my-auto p-0">
@@ -309,11 +308,10 @@
         </section>
         <!-- ご自宅での使い方 -->
         <section class="sect04" id="section04">
-            <div class="section-strip">
-                <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1">
-                    <h2 class="no-background"><span>ご自宅での使い方</span></h2>
-                </div>
+            <div class="section-title">
+                <h2><span>ご自宅での使い方</span></h2>
             </div>
+            
             <div class="container-fluid p-0">
 
                 <h3 id="section04-01"></h3>
@@ -340,6 +338,12 @@
             </div>
             <h3 id="section04-02"></h3>
             <h3 id="section04-03"></h3>
+            <div class="video">
+                <div class="embed-responsive embed-responsive-16by9 mt-5">
+                        <video controlsList="nodownload" autoplay muted loop
+                            src="images/video/IMG_0341.mov"></video>
+                    </div>
+            </div>
         </section>
 
 
@@ -399,11 +403,10 @@
         </section>
 
         <section class="sect10" id="section10">
-            <div class="section-strip">
-                <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1">
-                    <h2 class="no-background"><span>更に「イエでインカラミする毎日」のケアは</span></h2>
-                </div>
+            <div class="section-title">
+                <h2><span>更に「イエでインカラミする毎日」のケアは</span></h2>
             </div>
+            
             <div class="container">
                 <div class="section10-01">
                     <h3>週2回のTOKIO HOMEと<br>

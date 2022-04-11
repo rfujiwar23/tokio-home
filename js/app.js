@@ -6,7 +6,7 @@ var vm = new Vue({
   el: "#section01",
   data: {
     message:
-      "サロンメニューで行う4ステップの<br class='br_on500'>トリートメントメニュー。<br>髪のダメージや<br class='br_on500'>お客様のお悩みを解決します。",
+      "サロンメニューで行う4ステップの<br class='br_on500'>トリートメントメニュー。<br>髪のダメージ、<br class='br_on500'>髪の悩みを解決します。",
     threePoints: [
       {
         subtitle: "特許技術",
@@ -34,7 +34,7 @@ var vm = new Vue({
   data: {
     // h2
     text1:
-      "サロントリートメントを受けたお客様とサロンの思いは？",
+      "サロントリートメントを受けたお客様と<br class='br_on500'>サロンの思いは？",
     // h3
     text2: "そんなお客様に美容師・サロンケアから、<br>週2回、ご自宅でのケアで<br>「TOKIOインカラミの効果が<br class='br_on500'>最大１ヶ月持続」する<br>TOKIO HOMEのご提案です。",
 
@@ -42,7 +42,7 @@ var vm = new Vue({
     text3: 'その持続の理由は簡単!!<br>サロンで使用するトリートメントと<br class="br_on500">同じ成分を使用した<br>”業界初の集中ケアマスク”',
 
     // h5
-    text4: "TOKIOインカラミサロントリートメント<br>【4番】と同じ成分",
+    text4: "TOKIOインカラミサロントリートメント<br class='br_on500'>【4番】と同じ成分",
 
     // h6
     text5: "週<em>2</em>回、<span>月曜日</span>と<span>木曜日</span>に使うだけで、<br>サロントリートメントあとの<br>質感をずっと楽しめる！",
