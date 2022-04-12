@@ -5,6 +5,9 @@
 var vm = new Vue({
   el: "#topSection",
   data: {
+    message1: 'TOKIOインカラミ<br><span>専用集中ケアマスク</span>',
+    message2: '「魔法のスライムで、ご自宅簡単サロンケア」',
+    message3: 'TOKIO HOMEのポイントは３つ',
     mainPoints: [
       {
         ptNum: "Point 1",

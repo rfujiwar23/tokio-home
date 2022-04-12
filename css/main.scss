@@ -173,6 +173,24 @@ body {
         text-align: center;
         .sect01-top {
             margin: 3vh auto;
+            h2 {
+                font-size: 1em;
+                line-height: 3em;
+                span {
+                    font-size: 2em;
+                    position:relative;
+                    &:after {
+                        content: '専用';
+                        position:absolute;
+                        top:-20px;
+                        font-size: 0.5em;
+                        width:48px;
+                        background:#000;
+                        color:#fff;
+                        border-radius: 20px;
+                    }
+                }
+            }
             h3 {
                 line-height: 2em;
                 font-size: 2em;
