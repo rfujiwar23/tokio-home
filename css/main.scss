@@ -189,6 +189,7 @@ body {
             width: 85%;
             margin: 0 auto;
             .points {
+                margin-bottom:-15px;
                 .inner {
                     display: flex;
                     align-items: center;
@@ -201,6 +202,12 @@ body {
                     .text-bottom {
                         p {
                             font-size: 1.25em;
+                            span {
+                                font-weight: 800;
+                                // color: red;
+                                font-size: 1.25em;
+                                padding:0 5px;
+                            }
                         }
                     }
                     .text-top {
@@ -238,33 +245,12 @@ body {
                     box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.33);
                     border: 2px solid #fff;
                 }
-            }
-            .card-header {
-                padding: 5px 10px;
-                background: #fff;
-                h4 {
-                    font-size: 1em;
+                &:nth-child(even) {
+                    flex-direction: row-reverse;
                 }
             }
-            .card-image-text {
-                position: relative;
-                .overlay {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background: rgba(0, 0, 0, 0.25);
-                    padding: 20px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    p {
-                        color: #fff;
-                        font-size: 1.25em;
-                        font-weight: bold;
-                    }
-                }
+            .even {
+                flex-direction: row-reverse;
             }
         }
         .sect01-02 {
@@ -504,83 +490,68 @@ body {
                 width: 95%;
                 // max-width:800px
                 // background:#555;;
-                margin: 8vh auto;
+                margin: 0 auto;
                 padding: 20px;
-                .parts {
-                    // width:98%;
-                    margin: 0 auto;
-                    // padding:10px 5px;
-                    background: #fff;
-                    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.66);
-                    // border:3px solid rgba(122, 122, 122,0.7);
-                    .heading {
-                        background: #737373;
-                        h5 {
-                            font-size: 1em;
-                            // margin-left:0;
-                            text-align: center;
-                            padding: 15px 0;
-                            color: #fff;
-                            // border-bottom: 1px solid #9a9a9a;
-                        }
-                    }
-                    .body {
-                        padding: 15px 20px;
-                        p {
-                            font-size: 0.9em;
-                            // padding:5px 7px;
-                        }
-                    }
-                }
-                .circle {
-                    position: relative;
-                    display: block;
-                    margin: 2em 0;
-                    background-color: transparent;
-                    color: #222;
+                h2 {
+                    
+                    font-size: 1.5em;
                     text-align: center;
-
-                    &:after {
+                    strong {
+                        color:#bb1e1e;
+                    }
+                }
+                .points {
+                    
+                    .circle {
+                        position: relative;
                         display: block;
-                        padding-bottom: 100%;
+                        margin: 2em 0;
+                        background-color: transparent;
+                        color: #222;
+                        text-align: center;
+    
+                        &:after {
+                            display: block;
+                            padding-bottom: 100%;
+                            width: 100%;
+                            height: 0;
+                            border-radius: 50%;
+                            background-color: rgba(255, 242, 169, 0.77);
+                            border: 2px solid rgb(255, 255, 255);
+                            content: "";
+                            box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.33);
+                        }
+                    }
+    
+                    .circle__inner {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
                         width: 100%;
-                        height: 0;
-                        border-radius: 50%;
-                        background-color: rgba(255, 242, 169, 0.77);
-                        border: 2px solid rgb(255, 255, 255);
-                        content: "";
-                        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.33);
+                        height: 100%;
                     }
-                }
-
-                .circle__inner {
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                }
-
-                .circle__wrapper {
-                    display: table;
-                    width: 100%;
-                    height: 100%;
-                }
-
-                .circle__content {
-                    display: table-cell;
-                    padding: 1em;
-                    vertical-align: middle;
-                    p {
-                        font-size: 0.75em;
+    
+                    .circle__wrapper {
+                        display: table;
+                        width: 100%;
+                        height: 100%;
                     }
-                    h5 {
-                        font-size: 0.9em;
-                        // margin-top: 10px;
-                        font-weight: 800;
-                        margin: 0;
-                        margin-bottom: 10px;
+    
+                    .circle__content {
+                        display: table-cell;
+                        padding: 1em;
+                        vertical-align: middle;
+                        p {
+                            font-size: 0.75em;
+                        }
+                        h5 {
+                            font-size: 0.9em;
+                            // margin-top: 10px;
+                            font-weight: 800;
+                            margin: 0;
+                            margin-bottom: 10px;
+                        }
                     }
                 }
             }
@@ -657,12 +628,14 @@ body {
             }
         }
         .steps {
-            margin: 4vh auto;
+            margin: 0vh auto -20px;
             width: 100%;
             max-width: 560px;
             // background:#4f4f4f;
             padding: 20px 10px;
-
+            &:nth-child(even) {
+                flex-direction: row-reverse;
+            }
             .inner {
                 display: flex;
                 align-items: center;
@@ -693,6 +666,7 @@ body {
                 box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.66);
             }
         }
+        
     }
 
     .sect05 {
@@ -1012,6 +986,7 @@ body {
         .sect02 {
             .sect02-01 {
                 .product-info {
+                    width:70%;
                     .img {
                         margin: 4vh auto;
                     }
@@ -1070,6 +1045,18 @@ body {
             width: 100%;
         }
     }
+    .main {
+        .sect02 {
+            .sect02-01 {
+                .product-info {
+                    width:100%;
+                    max-width:450px;
+                }
+            }
+        }
+    }
+
+
 }
 
 @media screen and (max-width: 500px) {

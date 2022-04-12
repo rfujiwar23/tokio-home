@@ -160,6 +160,9 @@ body {
   width: 85%;
   margin: 0 auto;
 }
+.main .sect01 .sect01-01 .points {
+  margin-bottom: -15px;
+}
 .main .sect01 .sect01-01 .points .inner {
   display: flex;
   align-items: center;
@@ -172,6 +175,11 @@ body {
 }
 .main .sect01 .sect01-01 .points .inner .text-bottom p {
   font-size: 1.25em;
+}
+.main .sect01 .sect01-01 .points .inner .text-bottom p span {
+  font-weight: 800;
+  font-size: 1.25em;
+  padding: 0 5px;
 }
 .main .sect01 .sect01-01 .points .inner .text-top h4 {
   font-size: 2em;
@@ -194,32 +202,11 @@ body {
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.33);
   border: 2px solid #fff;
 }
-.main .sect01 .sect01-01 .card-header {
-  padding: 5px 10px;
-  background: #fff;
+.main .sect01 .sect01-01 .points:nth-child(even) {
+  flex-direction: row-reverse;
 }
-.main .sect01 .sect01-01 .card-header h4 {
-  font-size: 1em;
-}
-.main .sect01 .sect01-01 .card-image-text {
-  position: relative;
-}
-.main .sect01 .sect01-01 .card-image-text .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.25);
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.main .sect01 .sect01-01 .card-image-text .overlay p {
-  color: #fff;
-  font-size: 1.25em;
-  font-weight: bold;
+.main .sect01 .sect01-01 .even {
+  flex-direction: row-reverse;
 }
 .main .sect01 .sect01-02 {
   margin: 4vh auto;
@@ -434,30 +421,17 @@ body {
 }
 .main .sect02 .sect02-01 .product-info {
   width: 95%;
-  margin: 8vh auto;
+  margin: 0 auto;
   padding: 20px;
 }
-.main .sect02 .sect02-01 .product-info .parts {
-  margin: 0 auto;
-  background: #fff;
-  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.66);
-}
-.main .sect02 .sect02-01 .product-info .parts .heading {
-  background: #737373;
-}
-.main .sect02 .sect02-01 .product-info .parts .heading h5 {
-  font-size: 1em;
+.main .sect02 .sect02-01 .product-info h2 {
+  font-size: 1.5em;
   text-align: center;
-  padding: 15px 0;
-  color: #fff;
 }
-.main .sect02 .sect02-01 .product-info .parts .body {
-  padding: 15px 20px;
+.main .sect02 .sect02-01 .product-info h2 strong {
+  color: #bb1e1e;
 }
-.main .sect02 .sect02-01 .product-info .parts .body p {
-  font-size: 0.9em;
-}
-.main .sect02 .sect02-01 .product-info .circle {
+.main .sect02 .sect02-01 .product-info .points .circle {
   position: relative;
   display: block;
   margin: 2em 0;
@@ -465,7 +439,7 @@ body {
   color: #222;
   text-align: center;
 }
-.main .sect02 .sect02-01 .product-info .circle:after {
+.main .sect02 .sect02-01 .product-info .points .circle:after {
   display: block;
   padding-bottom: 100%;
   width: 100%;
@@ -476,7 +450,7 @@ body {
   content: "";
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.33);
 }
-.main .sect02 .sect02-01 .product-info .circle__inner {
+.main .sect02 .sect02-01 .product-info .points .circle__inner {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -484,20 +458,20 @@ body {
   width: 100%;
   height: 100%;
 }
-.main .sect02 .sect02-01 .product-info .circle__wrapper {
+.main .sect02 .sect02-01 .product-info .points .circle__wrapper {
   display: table;
   width: 100%;
   height: 100%;
 }
-.main .sect02 .sect02-01 .product-info .circle__content {
+.main .sect02 .sect02-01 .product-info .points .circle__content {
   display: table-cell;
   padding: 1em;
   vertical-align: middle;
 }
-.main .sect02 .sect02-01 .product-info .circle__content p {
+.main .sect02 .sect02-01 .product-info .points .circle__content p {
   font-size: 0.75em;
 }
-.main .sect02 .sect02-01 .product-info .circle__content h5 {
+.main .sect02 .sect02-01 .product-info .points .circle__content h5 {
   font-size: 0.9em;
   font-weight: 800;
   margin: 0;
@@ -560,10 +534,13 @@ body {
   border-bottom: 1px solid #120525;
 }
 .main .sect04 .steps {
-  margin: 4vh auto;
+  margin: 0vh auto -20px;
   width: 100%;
   max-width: 560px;
   padding: 20px 10px;
+}
+.main .sect04 .steps:nth-child(even) {
+  flex-direction: row-reverse;
 }
 .main .sect04 .steps .inner {
   display: flex;
@@ -866,6 +843,9 @@ body {
     max-width: 768px;
   }
 
+  .main .sect02 .sect02-01 .product-info {
+    width: 70%;
+  }
   .main .sect02 .sect02-01 .product-info .img {
     margin: 4vh auto;
   }
@@ -909,6 +889,11 @@ body {
   }
   .jumbotron .inner {
     width: 100%;
+  }
+
+  .main .sect02 .sect02-01 .product-info {
+    width: 100%;
+    max-width: 450px;
   }
 }
 @media screen and (max-width: 500px) {
