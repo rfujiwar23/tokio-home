@@ -1,6 +1,6 @@
 $tokio-main: #ffebcd;
 $tokio-red: #bb1e1e;
-
+$headerHeight: 80px;
 body {
     // font-family: 'PT Serif', serif;
     font-family: "Noto Sans JP", sans-serif;
@@ -11,8 +11,30 @@ body {
     float: none !important;
 }
 
+.nav {
+    height:80px
+}
+
+
+.top-banner {
+    // height:100vh;
+    height:calc(100vh - $headerHeight);
+    .inner {
+        width: 100%;
+        max-width:840px;
+        margin:0 auto;
+        // background: url('../images/tokio-home.png') no-repeat;
+        // height: 100%;
+        // background-position: center;
+        // background-size: cover;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+    }
+}
+
 .jumbotron {
-    padding-top: 56.75%;
+    padding-top: 56.25%;
     background: rgb(109, 99, 94);
     // padding-bottom:0;
     position: relative;
@@ -29,8 +51,6 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        img {
-        }
     }
 }
 
@@ -177,7 +197,20 @@ body {
                     .text-top,
                     .text-bottom {
                         width: 100%;
-                        // background:#737373;
+                    }
+                    .text-bottom {
+                        p {
+                            font-size: 1.25em;
+                        }
+                    }
+                    .text-top {
+                        h4 {
+                            font-size: 2em;
+                            text-transform: uppercase;
+                            font-weight: 800;
+                            text-shadow: 1px 1px 3px rgb(136, 136, 136);
+                            color: rgb(234, 168, 168);
+                        }
                     }
                     .text-top {
                         margin-bottom: 10px;
@@ -1032,9 +1065,9 @@ body {
 
 @media screen and (max-width: 576px) {
     .jumbotron {
-        padding-top: 100%;
+        aspect-ratio: 1080/840;
         .inner {
-            width: 66%;
+            width: 100%;
         }
     }
 }
