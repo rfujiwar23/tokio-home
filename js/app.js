@@ -63,16 +63,19 @@ var vm = new Vue({
         id:1,
         heading: '髪に潤いを与える',
         body: 'セラミド、18MEAの働きで水分と油分のバランスを整えます。',
+        int: 'odd',
       },
       {
         id:2,
         heading: 'インカラミの持続',
         body: 'TOKIOトリートメントの効果実感の持続をサポートします。',
+        int: 'even',
       },
       {
         id:3,
         heading: '紫外線から守る',
         body: 'フラーレンの働きによって、活性酸素を除去します。',
+        int: 'odd',
       }
     ]
   }
