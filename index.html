@@ -31,6 +31,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css" />
     <title>TOKIO HOME</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script>
+        $(document).scroll(function () {
+          var y = $(this).scrollTop();
+          if (y > 1400) {
+            $('.qr-code').fadeIn();
+          } else {
+            $('.qr-code').fadeOut();
+          }
+        });
+      </script>
 
 </head>
 
@@ -38,7 +48,7 @@
 
     <div class="wrapper">
         <div class="qr-code">
-            <img src="images/qr-code.png" alt="QR CODE">
+            <a href="https://ifing-beauty.com">IFING BEAUTY ONLINEへ</a>
         </div>
     
         <nav class="navbar navbar-light bg-light">
@@ -55,150 +65,10 @@
         
     
         <div class="main">
-            <section class="sect01" id="topSection">
-                <section class="sect01-top">
-                    <h2 v-html="message1"></h2>
-                    <h3 v-html="message2">/h3>
-                    <h4 v-html="message3"></h4>
-                </section>
-    
-                <div class="sect01-01 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1" >
-                    <div class="points" v-for="main in mainPoints">
-                        <div class="row" :class="main.evenOdd">
-                            <div class="inner col-sm-8 col-7 px-0">
-                                <div class="my-auto" style="width:100%;">
-                                    <div class="text-top">
-                                        <h4>{{main.ptNum}}</h4>
-                                    </div>
-                                    <div class="text-bottom">
-                                        <p v-html="main.body"></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-5 px-0">
-                                <img :src="main.img" alt="TOKIO INKARAMI HOME" class="img-fluid circle">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="sect01-02">
-                    <h3>カリスマ美容師・カミカリスマサロン<br class="br_on500">支持率No.1</h3>
-                    <h4>TOKIOインカラミトリートメント</h4>
-                    <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 mt-3">
-                        <img src="images/img-002.png" alt="TOKIO INKARAMI" class="img-fluid">
-                    </div>
-                </div>
-    
-                <div class="sect01-03">
-                    <div class="product-list" id="section01">
-                        <h3 v-html="message"></h3>
-                        <div class="row my-5 bg">
-                            <div v-for="point in threePoints" class="points col-md-4 col-sm-6 col-9">
-                                <div class="circle">
-                                    <div class="circle__inner">
-                                        <div class="circle__wrapper">
-                                            <div class="circle__content">
-                                                <h4>{{point.subtitle}}</h4>
-                                                <h5 class="circleh5"><span>{{point.subtitle2}}</span></h5>
-                                                <hr>
-                                                <p>{{point.text}}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <h6 v-html="message2"></h6>
-                    </div>
-                </div>
-            </section>
-            <!-- sect02 -->
-            <section class="sect02">
-                <div class="sect02-01" id="section02">
-                    <div class="section-title">
-                        <h2><span v-html="text1"></span></h2>
-                    </div>
-                    <div class="voices">
-                        <div class="row">
-                            <div class="v-col col-sm-6 mb-4" v-for="voice in voices">
-                                <div class="content">
-                                    <div class="top">
-                                        <h4>{{voice.heading}}</h4>
-                                    </div>
-                                    <p>{{voice.body}}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 v-html="text2"></h3>
-                    <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-8 offset-sm-2 my-4">
-                        <img src="images/tokioimg100.png" alt="TOKIO INKARAMI 仕組み" class="img-fluid">
-                    </div>
-                    <div class="plus col-lg-2 offset-lg-5 col-md-2 offset-md-5 col-sm-4 offset-sm-4 col-4 offset-4">
-                        <i class="fa-solid fa-plus"></i>
-                    </div>
-                    <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 col-sm-8 offset-sm-2 my-4">
-                        <img src="images/tokioimg101.png" alt="TOKIO INKARAMI 仕組み" class="img-fluid">
-                    </div>
-                    <h4 class="bottom" v-html="text3"></h4>
-                    <div class="section-title">
-                        <h2 class="no-background"><span v-html="text4"></span></h2>
-                    </div>
-    
-                    <div class="product-info">
-                        <h2>TOKIOトリートメントの
-                            <strong>“艶” </strong><strong>”手触り”</strong>がそのまま！</h2>
-                        <div class="col-lg-10 offset-lg-1 col-8 offset-2 image-area">
-                            
-                            <div class="col-lg-4 offset-lg-4 col-md-4 offset-md-4 col-sm-6 offset-sm-3">
-                                <img src="images/tokio-home-item.png" alt="tokio inkarami home" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-lg-8 offset-lg-2 my-auto points">
-                            <!-- <div class="row">
-                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 mb-3" v-for="part in parts">
-                                    <div class="circle">
-                                        <div class="circle__inner">
-                                            <div class="circle__wrapper">
-                                                <div class="circle__content">
-                                                    <h5>{{part.heading}}</h5>
-                                                    <p>{{part.body}}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <div v-for="part in parts">
-                                <div class="row" :class="part.int" >
-                                    <div class="col-sm-3 col-5 px-0">
-                                        <div class="circle">
-                                            <div class="circle__inner">
-                                                <div class="circle__wrapper">
-                                                    <div class="circle__content">
-                                                        <h5>{{part.heading}}</h5>
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-9 col-7 my-auto px-2">{{part.body}}</div>
-                                </div>
-                            </div>
-                        </div>
-    
-    
-                    </div>
-    
-                    <h6 v-html="text5" class="text5"></h6>
-                </div>
-            </section>
             <!-- 漫画セクション -->
             <section class="sect03">
                 <div class="sect03-title">
-                    <h2>漫画で解説！</h2>
+                    <h2>「私の美髪習慣 OL編」</h2>
                 </div>
                 <div class="container-fluid">
                     <div id="carouselExampleIndicators" class="carousel slide">
@@ -241,15 +111,152 @@
                     </div>
                 </div>
             </section>
-            <!-- ご自宅での使い方 -->
-            <section class="sect04" id="section04">
-                <div class="section-title">
-                    <h2><span>ご自宅での使い方</span></h2>
+            <section class="sect01" id="topSection">
+                
+
+                <div class="sect01-03">
+                    <div class="product-list" id="section01">
+                        <h2>TOKIOトリートメントの特徴</h2>
+                        <div class="row mt-4 mb-5 bg text-center">
+                            
+                            <div v-for="point in threePoints" class="points col-10 offset-1">
+                                <!-- <h4></h4> -->
+                                <h5 class="circleh5">{{point.subtitle}}<br><span>{{point.subtitle2}}</span></h5>
+                                <hr>
+                                <p>{{point.text}}</p>
+                            </div>
+                        </div>
+                        <h6 v-html="message2"></h6>
+                    </div>
+                </div>
+
+                <div class="sect01-02">
+                    <h3>カリスマ美容師・カミカリスマサロン<br class="br_on500">支持率No.1</h3>
+                    <h4>TOKIOインカラミトリートメント</h4>
+                    <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 mt-3">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <video controls controlsList="nodownload" autoplay muted loop
+                                src="images/video/ocean-tokyo-takagi.mp4"></video>
+                        </div>
+                    </div>
                 </div>
     
+                <div class="sect01-01 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1" >
+                    <section class="sect01-top">
+                        <h2 v-html="message1"></h2>
+                        <h3 v-html="message2"></h3>
+                        <h4 v-html="message3"></h4>
+                    </section>
+                    <div class="points" v-for="main in mainPoints">
+                        <div class="row" :class="main.evenOdd">
+                            <div class="inner col-sm-8 col-7 px-0">
+                                <div class="my-auto" style="width:100%;">
+                                    <div class="text-top">
+                                        <h4>{{main.ptNum}}</h4>
+                                    </div>
+                                    <div class="text-bottom">
+                                        <p v-html="main.body"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-5 px-0">
+                                <img :src="main.img" alt="TOKIO INKARAMI HOME" class="img-fluid circle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                
+    
+                
+            </section>
+            <!-- sect02 -->
+            <section class="sect02">
+                <div class="sect02-01" id="section02">
+                   <div class="strip">
+                       <h3>Point 1</h3>
+                    <h2>TOKIOトリートメントの<br class="br_on500"><span>“艶” </span><span>”手触り”</span>がそのまま！</h2>
+                   </div>
+                    <div class="product-info">
+                        
+                        <!-- <div class="col-lg-10 offset-lg-1 col-8 offset-2 image-area"> -->
+                            <div class="col-sm-8 offset-sm-2 col-12 my-5">
+                                <img src="images/tokioimg100.png" alt="tokio inkarami home" class="img-fluid">
+                            </div>
+                        <!-- </div> -->
+                        <div class="col-lg-8 offset-lg-2 points">
+                            <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-10 offset-sm-1 part" v-for="part in parts">
+                                <div class="row" :class="part.int" >
+                                    <div class="col-sm-6 col-6 px-0">
+                                        <div class="circle">
+                                            <div class="circle__inner">
+                                                <div class="circle__wrapper">
+                                                    <div class="circle__content">
+                                                        <h5>{{part.heading}}</h5>
+                                                        <hr>
+                                                        <p>{{part.body}}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info-bottom mt-5 mb-3 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1" v-html="text6">
+                            <!-- <h4 ></h4> -->
+                        </div>    
+                    </div>
+                    <div class="strip">
+                        <h3>Point 2</h3>
+                        <h2 v-html="text1"></h2>
+                    </div>
+                    <div class="voices">
+
+                        <div class="testimonials col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-12 mb-4" v-for="voice in voices">
+                            <div class="heading">
+                                <div>{{voice.heading}}</div>
+                            </div>
+                            <div class="row testimonial-body mx-0" :class="voice.oddOrEven">
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-5"><img :src="voice.img" alt="voice.heading" class="img-fluid"></div>
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-7 my-auto">
+                                    <div class="thought-bubble" :class="voice.oddOrEven">{{voice.body}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="strip">
+                        
+                        <h2 v-html="text5"></h2>
+                    </div>
+                    <div class="midDiv col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 my-5">
+                        <div class="row">
+                            <div class="col-6" v-for="rd in routineDays">
+                                <div class="days">
+                                    <h4>{{rd.weekday}}</h4>
+                                    <hr>
+                                    <p>{{rd.routine}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4></h4>
+                    </div>
+
+                    <h3 v-html="text2"></h3>
+                    
+                </div>
+            </section>
+            
+            <!-- ご自宅での使い方 -->
+            <section class="sect04" id="section04">
+                <div class="strip">
+                    <h3>Point 3</h3>
+                    <h2 v-html="text5"></h2>
+                </div>
+                
+                <h6 v-html="text6" class="text5"></h6>
+    
                 <div class="container-fluid p-0">
-                    <h3 id="section04-01"></h3>
-                    <!-- <div class="row steps"> -->
                     <div class="steps row" v-for="step in steps">
                         <div class="inner col-sm-8 col-9">
                             <div class="text-area">
@@ -257,7 +264,7 @@
                                     <h5><span><em>ステップ</em>0{{step.id}}</span> {{step.alt}}</h5>
                                 </div>
                                 <div class="text-bottom px-2 pt-3">
-                                    <p>{{step.body}}</p>
+                                    <p v-html="step.body"></p>
                                 </div>
                             </div>
                         </div>
@@ -265,7 +272,6 @@
                             <img :src="step.img" :alt="step.alt" class="img-fluid" style="border-radius: 50%;">
                         </div>
                     </div>
-                    <!-- </div> -->
                 </div>
                 <h3 id="section04-02"></h3>
                 <h3 id="section04-03"></h3>
@@ -280,32 +286,14 @@
             <section class="sect09">
     
                 <div class="container" id="section09">
-                    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-                        <div class="row section05-manga">
-                            <div class="col-6"><img src="images/section05-01.jpg" alt="" class="img-fluid"></div>
-                            <div class="col-6 quote">
-                                <div class="speech left">
-                                    TOKIOトリートメントやってるお店はたくさんあるけど、
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row section05-manga">
-                            <div class="col-6 quote">
-                                <div class="speech right">
-                                    実は私も前回と今回で持続が違う！やっぱりホームケアも大切
-                                </div>
-                            </div>
-                            <div class="col-6"><img src="images/section05-02.jpg" alt="" class="img-fluid"></div>
-                        </div>
-                    </div>
                     <h4>実は、<br>トキオインカラミトリートメント<br>“インカラミ”の持続提案を<br>してくれるサロンは
                     </h4>
-                    <!-- font awesome arrow goes down here -->
                     <h4>必ず<br>『トキオインカラミトリートメント』<br>＋<br>『TOKIO HOME付』<br>
                         を実施しています。</h4>
                     <h3 class="text-center mb-5">そんなサロンはこちら↓↓↓</h3>
                     <div class="row col-lg-8 offset-lg-2 col-md-10 offset-md-1 reserve">
-                        <div class="col-sm-6" v-for="salon in salonType">
+                        <div class="col-sm-6 my-3" v-for="salon in salonType">
+                            <p>{{salon.text}} ページへ</p>
                             <div class="link-to">
                                 <div class="text-area">
                                     <a :href="salon.link">{{salon.text}}へ</a>
@@ -321,24 +309,19 @@
     
             <section class="sect10" id="section10">
                 <div class="section-title">
-                    <h2><span>更に「イエでインカラミする毎日」のケアは</span></h2>
+                    <h2><span>更に「<ruby>家<rt>イエ</rt></ruby>でインカラミする毎日」のケアは</span></h2>
                 </div>
     
                 <div class="container">
                     <div class="section10-01">
-                        <h3>週2回のTOKIO HOMEと<br>
-                            毎日のTOKIO IEシャンプートリートメントで<br>
-                            「イエでもインカラミ体験」</h3>
+                        <h3 v-html="topMessage"></h3>
                         <div class="row pics">
-                            <div class="col-6 col-sm-6">
-                                <img src="images/tokio_bg001.png" class="img-fluid" alt="TOKIO HYPER INKARAMI">
-                            </div>
-                            <div class="col-6 col-sm-6">
-                                <img src="images/tokio_bg002.png" class="img-fluid" alt="TOKIO HYPER INKARAMI">
+                            <div class="col-6 col-sm-6" v-for="img in images">
+                                <img :src="img.imgURL" class="img-fluid" alt="img.alt">
                             </div>
                         </div>
                         <div class="row mt-5">
-                            <div class="col-sm-4 offset-sm-4 col-6 offset-3">
+                            <div class="col-sm-4 offset-sm-4 col-10 offset-1">
                                 <img src="images/tokio-ie-card.png" alt="TOKIO INKARAMI HOME" class="img-fluid">
                             </div>
                         </div>
@@ -389,7 +372,7 @@
             data: {
                 salonType: [
                     { img: 'images/img-kamisma.png', text: 'KAMISMA BEAUTY' },
-                    { img: 'images/img-tokio.png', text: 'TOKIO' },
+                    { img: 'images/img-tokio.png', text: 'TOKIO.TOKYO' },
                 ]
             }
         });

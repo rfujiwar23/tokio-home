@@ -5,13 +5,13 @@
 var vm = new Vue({
   el: "#topSection",
   data: {
-    message1: 'TOKIOインカラミ<br><span>専用集中ケアマスク</span>',
-    message2: '「魔法のスライムで、ご自宅簡単サロンケア」',
-    message3: 'TOKIO HOMEのポイントは３つ',
+    message1: 'そんな<br><span>TOKIOインカラミ専用</span>',
+    message2: '集中ケアパック',
+    message3: 'TOKIO HOME<br>3つのPoint',
     mainPoints: [
       {
         ptNum: "Point 1",
-        body: "サロンメニューと<span>同じ</span>成分",
+        body: "インカラミの<span>持続</span>",
         img: "images/sect01_002.png",
         evenOdd: 'odd',
       },
@@ -23,7 +23,7 @@ var vm = new Vue({
       },
       {
         ptNum: "Point 3",
-        body: "インカラミ効果を<span>最大持続</span>",
+        body: "正しい<span>使用方法</span>",
         img: "images/sect01_003.png",
         evenOdd: 'odd',
       },

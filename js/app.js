@@ -6,22 +6,25 @@ var vm = new Vue({
   el: "#section01",
   data: {
     message:
-      "サロンメニューで行う4ステップの<br class='br_on500'>トリートメントメニュー。<br>髪のダメージ、<br class='br_on500'>髪の悩みを解決します。",
+      "強く、美しく、しなやかに、<br class='br_on500'>髪がよみがえる効果実感。",
     threePoints: [
       {
         subtitle: "特許技術",
         subtitle2: "インカラミ",
-        text: "毛髪の大部分はタンパク質で構成されており、それらはカラーや加齢などによって薄なわれる。そのタンパク質毛髪内部に再形成できる唯一の技術。",
+        text: "美しい髪に必要不可欠なタンパク質を新しく形成する業界初の反応技術。",
       },
+      
       {
         subtitle: "毛髪強度回復",
         subtitle2: "140%",
-        text: "インカラミの効果によって神の強度回復力は通常のおよそ8倍に。弱った髪を強くし、切れ毛などの悩みを解消します。",
+        text: "インカラミ効果の強度回復でカラーの色持ちスタイリングのしやすさ向上。",
       },
+      
       {
         subtitle: "ノーベル賞受賞成分",
         subtitle2: "フラーレン",
-        text: "活性酵素を除去する高い抗酸化力をもち、持続性にも優れた成分。紫外線など日々の避けられないダメージから髪を守ります。",
+        text: "活性酵素を除去する高い抗酸化力を持ちインカラミ効果の持続力をアップ。",
+        
       },
     ],
     
@@ -33,10 +36,11 @@ var vm = new Vue({
   el: "#section02",
   data: {
     // h2
-    text1:
-      "サロントリートメントを受けたお客様と<br class='br_on500'>サロンの思いは？",
+    text1: "週<span>2</span>回、<span>月</span>曜日と<span>木</span>曜日の使用で効果実感！",
+
+    text5: 'まずは<br><span>月</span>曜日と<span>木</span>曜日の週<span>2</span>回<br>TOKIO HOMEをお試しください。',
     // h3
-    text2: "そんなお客様に美容師・サロンケアから、<br>週2回、ご自宅でのケアで<br>「TOKIOインカラミの効果が<br class='br_on500'>最大１ヶ月持続」する<br>TOKIO HOMEのご提案です。",
+    text2: "ご自宅でのケアで<br>TOKIOインカラミトリートメントの<br><span>効果持続</span>が<span>最大化</span>します。",
 
     // h4
     text3: 'その持続の理由は簡単!!<br>サロンで使用するトリートメントと<br class="br_on500">同じ成分を使用した<br>”業界初の集中ケアマスク”',
@@ -44,17 +48,26 @@ var vm = new Vue({
     // h5
     text4: "TOKIOインカラミサロントリートメント<br class='br_on500'>【4番】と同じ成分",
 
-    // h6
-    text5: "週<em>2</em>回、<span>月曜日</span>と<span>木曜日</span>に使うだけで、<br>サロントリートメントあとの<br>質感をずっと楽しめる！",
+    text6: '「インカラミ持続」理由は簡単!!<br>サロンで使用するトリートメントと<br class="br_on500">同じ成分を使用した<br class="br_on500">「集中ケアパック」です。',
+
+    routineDays: [
+      {weekday: '月曜日', routine: 'フローラルの香りで気分を上げる！'},
+      {weekday: '木曜日', routine: '週末に向けて髪を綺麗にする準備！'},
+    ],
+
       // div
     voices: [
       {
-        heading: 'お客様の実感',
-        body: 'この質感がもっと長く続けばいいのに',
+        heading: 'サロンの想い',
+        body: 'お客様には綺麗な髪でまた来店してほしい',
+        img: 'images/section05-01.jpg',
+        oddOrEven: 'odd',
       },
       {
-        heading: 'サロンの想い',
-        body: 'お客様に最大の満足感を次回も綺麗な状態で',
+        heading: '実際にトリートメントをしたお客様の感想',
+        body: 'この質感がもっとながく続けばいいのに。ホームケアってあるのかな？',
+        img: 'images/section05-02.jpg',
+        oddOrEven: 'even',
       },
     ],
 
@@ -77,7 +90,7 @@ var vm = new Vue({
         body: 'フラーレンの働きによって、活性酸素を除去します。',
         int: 'odd',
       }
-    ]
+    ],
   }
 });
 
@@ -86,6 +99,8 @@ var vm = new Vue({
     el: "#section04",
     data: {
         // steps
+        text5: "TOKIO HOMEの<span>ご使用方法</span>",
+        text6: "月曜日と木曜日、お風呂での集中ケア",
         steps: [
         {
             id:1,
@@ -102,13 +117,13 @@ var vm = new Vue({
         {
             id:3,
             img: 'images/tokio-home_003.png',
-            body: 'クリームになるまで手のひらでしっかり伸ばします',
+            body: 'クリーム状に白くなるまでしっかり伸ばしてから、中間から毛先中心に馴染ませます。',
             alt: "TOKIO HOMEをクリーム状に",
         },
         {
             id:4,
             img: 'images/tokio-home_004.png',
-            body: '中間から毛先中心に馴染ませて5分ほど放置して流します',
+            body: '5分ほど放置して流します<br><span>※タオルで巻いたり、シャワーキャップをかぶることで質感UPを狙えます。</span> ',
             alt: "TOKIO HOMEを放置",
         },
       ]
@@ -142,6 +157,17 @@ var vm = new Vue({
     images: [
       {imgURL: 'images/tokio_bg001.png', alt: 'TOKIO インカラミ'},
       {imgURL: 'images/tokio_bg002.png', alt: 'TOKIO インカラミ HEAD SPA'},
+    ]
+  }
+});
+
+var vm = new Vue({
+  el: '#section10',
+  data: {
+    topMessage: '週2回のTOKIO HOMEと<br>毎日のTOKIO IEシャンプートリートメントで<br>「イエでもインカラミ体験」',
+    images: [
+      {imgURL: 'images/tokio_bg001.png', alt: 'TOKIO インカラミ'},
+      {imgURL: 'images/tokio_bg002.png', alt: 'TOKIO インカラミ'},
     ]
   }
 });
