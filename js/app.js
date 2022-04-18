@@ -28,7 +28,7 @@ var vm = new Vue({
       },
     ],
     
-    message2: "強く、美しく、しなやかに、<br class='br_on500'>髪がよみがえる実感。",
+    message2: "強く、美しく、しなやかに、<br class='br_on500'>髪がよみがえる実感",
   },
 });
 
@@ -36,11 +36,11 @@ var vm = new Vue({
   el: "#section02",
   data: {
     // h2
-    text1: "週<span>2</span>回、<span>月</span>曜日と<span>木</span>曜日の使用で効果実感！",
+    text1: "週<span>2</span>回、<span>月</span>曜日と<span>木</span>曜日の使用で<br class='br_on500'>効果実感！",
 
-    text5: 'まずは<br><span>月</span>曜日と<span>木</span>曜日の週<span>2</span>回<br>TOKIO HOMEをお試しください。',
+    text5: 'まずは週<span>2</span>回<br>TOKIO HOMEをお試しください。',
     // h3
-    text2: "ご自宅でのケアで<br>TOKIOインカラミトリートメントの<br><span>効果持続</span>が<span>最大化</span>します。",
+    text2: "<strong>おうちでサロンケア</strong><br>TOKIOインカラミトリートメントの<br><span>効果持続</span>が<span>最大化</span>します。",
 
     // h4
     text3: 'その持続の理由は簡単!!<br>サロンで使用するトリートメントと<br class="br_on500">同じ成分を使用した<br>”業界初の集中ケアマスク”',
@@ -48,7 +48,7 @@ var vm = new Vue({
     // h5
     text4: "TOKIOインカラミサロントリートメント<br class='br_on500'>【4番】と同じ成分",
 
-    text6: '「インカラミ持続」理由は簡単!!<br>サロンで使用するトリートメントと<br class="br_on500">同じ成分を使用した<br class="br_on500">「集中ケアパック」です。',
+    text6: '「インカラミ効果の持続」<br>その理由は簡単!!<br>サロンで使用するトリートメントと<br class="br_on500">同じ成分を使用した<br class="br_on500">「集中ケアパック」だから！',
 
     routineDays: [
       {weekday: '月曜日', routine: 'フローラルの香りで気分を上げる！'},
@@ -99,8 +99,8 @@ var vm = new Vue({
     el: "#section04",
     data: {
         // steps
-        text5: "TOKIO HOMEの<span>ご使用方法</span>",
-        text6: "月曜日と木曜日、お風呂での集中ケア",
+        text5: "正しい使い方はこれ！</span>",
+        text6: "月曜日と木曜日、お風呂で集中ケア<br>4ステップでより良い仕上がりへ",
         steps: [
         {
             id:1,
@@ -164,7 +164,8 @@ var vm = new Vue({
 var vm = new Vue({
   el: '#section10',
   data: {
-    topMessage: '週2回のTOKIO HOMEと<br>毎日のTOKIO IEシャンプートリートメントで<br>「イエでもインカラミ体験」',
+    topMessage1: '毎日のホームケアが変わる！<br>TOKIO IE<br class="br_on375">インカラミシャンプー・トリートメントを<br>オススメします',
+    topMessage: '週2回のTOKIO HOMEと毎日の<br>TOKIO IE<br class="br_on375">インカラミシャンプートリートメントで<br>自分史上最高の美髪を手に入れましょう！',
     images: [
       {imgURL: 'images/tokio_bg001.png', alt: 'TOKIO インカラミ'},
       {imgURL: 'images/tokio_bg002.png', alt: 'TOKIO インカラミ'},

@@ -15,6 +15,20 @@ S .col-center {
   float: none !important;
 }
 
+.br_on375 {
+  display: none;
+}
+
+.btn-ifing-beauty {
+  background: #E5ABA8;
+  color: #fff;
+}
+.btn-ifing-beauty:hover {
+  background: #fff;
+  border: 1px solid #E5ABA8;
+  color: #000;
+}
+
 .qr-code {
   position: fixed;
   bottom: 0%;
@@ -44,6 +58,24 @@ S .col-center {
   width: 100%;
   max-width: 840px;
   margin: 0 auto;
+}
+
+.mid-banner {
+  text-align: center;
+  padding: 4vh 0;
+  line-height: 2em;
+}
+.mid-banner strong {
+  font-size: 2em;
+  color: #bb1e1e;
+  padding: 0 2px;
+  font-weight: bold;
+}
+.mid-banner span {
+  font-size: 2em;
+  color: #bb1e1e;
+  padding: 20px 2px;
+  font-weight: bold;
 }
 
 .jumbotron {
@@ -216,8 +248,7 @@ S .col-center {
 }
 .main .sect01 .sect01-01 .points .inner .text-top h4 {
   font-size: 2em;
-  text-transform: uppercase;
-  font-weight: 800;
+  font-weight: bold;
   text-shadow: 1px 1px 3px #888888;
   color: #eaa8a8;
 }
@@ -268,7 +299,10 @@ S .col-center {
 }
 .main .sect01 .sect01-03 h2 {
   text-align: center;
-  text-decoration: underline;
+  font-weight: bold;
+}
+.main .sect01 .sect01-03 h2:before, .main .sect01 .sect01-03 h2:after {
+  content: "---";
 }
 .main .sect01 .sect01-03 h3 {
   line-height: 1.5em;
@@ -279,7 +313,8 @@ S .col-center {
   line-height: 1.5em;
 }
 .main .sect01 .sect01-03 h5 span {
-  font-size: 1.25em;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 .main .sect01 .sect01-03 h6 {
   font-size: 2em;
@@ -288,7 +323,7 @@ S .col-center {
   margin: 2vh auto;
 }
 .main .sect01 .sect01-03 .bg {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%), url("../images/tokio-home.jpg") no-repeat;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url("../images/tokio-home.jpg") no-repeat;
   background-position: center bottom;
   background-size: cover;
 }
@@ -315,7 +350,6 @@ S .col-center {
   color: rgba(224, 157, 153, 0.5);
   font-size: 3em;
   z-index: 1;
-  text-transform: uppercase;
   font-style: italic;
 }
 .main .sect02 .sect02-01 .strip h2 {
@@ -327,7 +361,9 @@ S .col-center {
 }
 .main .sect02 .sect02-01 .strip h2 span {
   color: #bb1e1e;
-  font-size: 1.25em;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0 3px;
 }
 .main .sect02 .sect02-01 .midDiv .days {
   height: 100%;
@@ -335,7 +371,6 @@ S .col-center {
   padding: 4vh 20px;
 }
 .main .sect02 .sect02-01 .midDiv .days h4 {
-  text-decoration: underline;
   text-align: center;
 }
 .main .sect02 .sect02-01 .midDiv .days p {
@@ -423,6 +458,10 @@ S .col-center {
   font-weight: bold;
   font-size: 1.25em;
 }
+.main .sect02 .sect02-01 h3 strong {
+  color: #bb1e1e;
+  font-size: 1.25em;
+}
 .main .sect02 .sect02-01 h4.bottom {
   text-align: center;
   line-height: 2em;
@@ -479,7 +518,7 @@ S .col-center {
   vertical-align: middle;
 }
 .main .sect02 .sect02-01 .product-info .points .part .circle__content p {
-  font-size: 0.75em;
+  font-size: 0.9em;
 }
 .main .sect02 .sect02-01 .product-info .points .part .circle__content h5 {
   font-size: 0.9em;
@@ -569,7 +608,6 @@ S .col-center {
   color: rgba(224, 157, 153, 0.5);
   font-size: 3em;
   z-index: 1;
-  text-transform: uppercase;
   font-style: italic;
 }
 .main .sect04 .strip h2 {
@@ -764,10 +802,29 @@ S .col-center {
   top: 50%;
   margin-top: -20px;
 }
+.main .sect09 .container h3 {
+  line-height: 2em;
+}
 .main .sect09 .container h4 {
   text-align: center;
   margin: 4vh 0;
   line-height: 2em;
+}
+.main .sect09 .container h4.strengthen {
+  background: #fff;
+  box-shadow: 1px 3px 6px #6d635e;
+  line-height: 2em;
+}
+.main .sect09 .container h4.strengthen span {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #000;
+}
+.main .sect09 .container p.small {
+  font-size: 0.8em;
+  color: #bb1e1e;
+}
+.main .sect09 .container p.small:before {
+  content: "*";
 }
 .main .sect09 .container .text-area {
   display: none;
@@ -897,7 +954,7 @@ S .col-center {
   }
 
   .main .sect02 .sect02-01 .product-info {
-    width: 70%;
+    width: 100%;
   }
   .main .sect02 .sect02-01 .product-info .img {
     margin: 4vh auto;
@@ -1067,11 +1124,15 @@ S .col-center {
   }
 }
 @media screen and (max-width: 375px) {
+  .br_on375 {
+    display: block;
+  }
+
   .main .sect01 .sect01-01 .points .inner .text-top h4 {
-    font-size: 0.9em;
+    font-size: 2em;
   }
   .main .sect01 .sect01-01 .points .inner .text-bottom p {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .main .sect02 .sect02-01 h3 {
     font-size: 1.05em;
@@ -1081,6 +1142,13 @@ S .col-center {
   }
   .main .sect02 .sect02-01 h6.text5 {
     font-size: 1.05em;
+  }
+  .main .sect02 .sect02-01 .product-info .product-info-bottom {
+    font-size: 1.25em;
+    line-height: 2em;
+  }
+  .main .sect02 .sect02-01 .midDiv .days h4 {
+    font-size: 1.2em;
   }
   .main .sect04 h3 {
     font-size: 1.25em;
@@ -1092,6 +1160,9 @@ S .col-center {
     font-size: 1.25em;
   }
   .main .sect10 .section10-01 h3 {
+    font-size: 1em;
+  }
+  .main .sect10 .section-title h2 {
     font-size: 1em;
   }
 }
